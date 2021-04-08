@@ -1,3 +1,3 @@
 # Control-M custom integrations plugins community solutions
 
-verticals...
+verticals are they way we order the integrations
