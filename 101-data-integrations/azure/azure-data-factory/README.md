@@ -4,7 +4,7 @@ Version 1.0.01
 ### Short description:
 Control-M Integration plugin for Azure data factory (ADF) pipelines.
 
-Released on 28-Apr-2020
+Coming Soon
  
 ### Detailed description:
 

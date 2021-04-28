@@ -1,7 +1,6 @@
 # Control-M custom integrations plugins community solutions
 
 This repository contains community built application integrations for Control-M Application Integrator.  
-+ [**Download Workbench for Oracle Virtual Box**](https://s3-us-west-2.amazonaws.com/controlm-appdev/release/latest/workbench_oracle_virtual_box.ova),  [**Download Workbench for VMWare**](https://s3-us-west-2.amazonaws.com/controlm-appdev/release/latest/workbench_vmware.ova) or [**Download Workbench for Docker**](https://docs.bmc.com/docs/automation-api/9019monthly/installation-928607473.html#Installation-InstallingtheControl-MWorkbenchonDocker) - the latest development Control-M environment. 
 
 ## Contribution guide
 To contribute, please follow these guidelines.
