@@ -4,7 +4,7 @@ Version 1.0.01
 ### Short description:
 Control-M Integration plugin for AWS Glue pipelines.
 
-Coming Soon
+# Coming Soon
  
 ### Detailed description:
 
