@@ -1,23 +1,48 @@
-# Control-M custom integrations plugins community solutions
+# Control-M Azure Data Factory plugin
+Version 1.0.01
 
-This repository contains community built application integrations for Control-M Application Integrator.  
-+ [**Download Workbench for Oracle Virtual Box**](https://s3-us-west-2.amazonaws.com/controlm-appdev/release/latest/workbench_oracle_virtual_box.ova),  [**Download Workbench for VMWare**](https://s3-us-west-2.amazonaws.com/controlm-appdev/release/latest/workbench_vmware.ova) or [**Download Workbench for Docker**](https://docs.bmc.com/docs/automation-api/9019monthly/installation-928607473.html#Installation-InstallingtheControl-MWorkbenchonDocker) - the latest development Control-M environment. 
+### Short description:
+Control-M Integration plugin for Azure data factory (ADF) pipelines.
 
-## Contribution guide
-To contribute, please follow these guidelines.
+Released on 28-Apr-2020
+ 
+### Detailed description:
 
-### Files, folders and naming conventions
-1. Every sample and its associated files must be contained in its own **folder**. Name this folder something that describes what your sample does. Usually this naming pattern looks like **level-sample-purpose** (e.g. 201-data-vendor-integration). Numbering should start at 101. 100 is reserved for things that need to be at the top.
+The Azure Data Factory plugin for Control-M enables the integration of ADF pipelines with your existing Control-M
+workflows.
 
-      For consistent categorization, please comply to the following folder structure:
-      + 1-vertical-integration
-      + 2-data-etl
-      + 3-robotic-process-solution-examples
-      + 4-bot-integration-examples
-      + 5-controlm-automation-api-integration-examples
+Azure data factory is a cloud-based ETL and data integration service that allows you to create data-driven workflows 
+for orchestrating data movement and transforming data at scale.
 
-2. For consistent ordering **create all folders in lowercase**.
-3. Include a **README.md** file that explains the sample. A good description helps other community members to understand your sample. The README.md uses [Github Flavored Markdown](https://guides.github.com/features/mastering-markdown/) for formatting text. If you want to add images to your README.md file, store the images in the **images** folder. Reference the images in the README.md with a relative path (e.g. `![alt text](images/sampleImage.png "Sample Image Text")`). This ensures the link will reference the target repository if the source repository is forked.
+Trigger and monitor Data Factory pipelines with this integration. Authentication can be handled by Service Principal
+and Managed Identity.
 
-## Questions/Feedback
-Please use issues on GitHub for questions or feedback about the examples included in this repository.
+#### Features
+
+* #### 1. Service Principal and Managed Identity Authentication 
+
+![](./images/connprof.png)
+
+* #### 2. Trigger pipelines with parameters.
+
+![jobparams](./images/jobparams.png)
+
+* #### 3. Return the results of the pipeline steps to the output in the Control-M Monitoring domain.  
+
+![output](./images/output.png)
+
+* #### 4. Integrate Azure pipeline runs with all existing Control-M capabilities.  
+    For example : 
+                   
+        a. Have your pipeline tasks defined in JSON and managed by your cicd process.          
+        b. Attach SLA's to your pipeline.
+        c. Wait for a b2b source to arrive and process it in an application and run a pipeline based on the outcome.
+        d. Attach prior and post dependancy steps to your pipeline for a fully encompassed view of your environment.
+        e. A single reference point for the entire lifecycle of your data, from creation to analytics.
+
+* #### 5. Avoid connection timeouts and unnecessary pipeline reruns
+
+
+
+ 
+
