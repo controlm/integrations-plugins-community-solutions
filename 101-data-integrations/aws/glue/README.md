@@ -31,7 +31,7 @@ bonding pipelines with supplying applications.
 
 ![output](./images/output.png)
 
-* #### 4. Integrate Azure pipeline runs with all existing Control-M capabilities.  
+* #### 4. Integrate AWS Glue pipeline runs with all existing Control-M capabilities.  
     For example : 
                    
         a. Have your pipeline tasks defined in JSON and managed by your cicd process.          
@@ -56,7 +56,7 @@ bonding pipelines with supplying applications.
   }
 }
 ```
-* #####  Using access key and secret
+#####  Using access key and secret
 ```
 {
   "ACCESSKEY": {
