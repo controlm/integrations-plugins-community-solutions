@@ -16,6 +16,12 @@ Control-M integration with Google DataFlow allows triggering of new jobs based o
 
 Authentication can be handled by Service Principal and Managed Identity.
 
+#### Pre requisites
+
+Control-M Version 9.20.000
+Fixpack 9.0.20.100
+Application pack Patch 9.0.20.101
+
 #### Features
 
 * #### 1. Service Principal and Managed Identity Authentication 

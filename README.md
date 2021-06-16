@@ -2,6 +2,10 @@
 
 This repository contains community built application integrations for Control-M Application Integrator.  
 
+## Compatibility Note
+
+Please check individual integrations README files for Control-M version and application compatibility 
+
 ## Contribution guide
 To contribute, please follow these guidelines.
 
