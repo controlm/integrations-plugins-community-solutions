@@ -21,6 +21,8 @@ Control-M Version 9.20.000
 Fixpack 9.0.20.100
 Application pack Patch 9.0.20.101
 
+Note: This plugin is not compatible with bmc Helix Control-M
+
 #### Features
 
 * #### 1. Service Principal and Managed Identity Authentication 
