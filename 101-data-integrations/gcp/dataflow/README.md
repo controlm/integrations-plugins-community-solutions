@@ -18,7 +18,7 @@ Authentication can be handled by Service Principal and Managed Identity.
 
 #### Features
 
-* #### 1. Service Principal and Managed Identity Authentication 
+* #### 1. Service Principal and Managed Identity Authentication when using Local Connection Profiles
 
 ![](./images/connection_profile.png)
 
@@ -47,6 +47,9 @@ Authentication can be handled by Service Principal and Managed Identity.
         a. A job that copies data from Google Cloud Storage to BigQuery that is updated hourly or daily.
         b. Without Control-M it will require a streaming job or to manually setup a Google Scheduler API Request to DataFlow. On the first case, there will be a cost for running the engine even when there is no data being processed.
         c. With Control-M we can create an hourly/daily job to only spend resources on DataFlow when there is data to be processed.
-
+        
+* #### Service Principal Authentication limitaton
+    Only Local Connection Profiles are supported when the authentication method is set as Service Account. Centralized Connection Profiles are not supported for this Authentication Method.
+    Managed VM Identity supports Centralized Connection Profile.
 
  
