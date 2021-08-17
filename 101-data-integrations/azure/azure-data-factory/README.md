@@ -12,7 +12,7 @@ workflows.
 Azure data factory is a cloud-based ETL and data integration service that allows you to create data-driven workflows 
 for orchestrating data movement and transforming data at scale.
 
-Trigger and monitor Data Factory pipelines with this integration. Authentication can be handled by Service Principal
+Triggers and monitors Data Factory pipelines with this integration. Authentication can be handled by Service Principal
 and Managed Identity.
 
 #### Pre requisites
