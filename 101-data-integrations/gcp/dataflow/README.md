@@ -56,5 +56,8 @@ Note: This plugin is not compatible with bmc Helix Control-M
         b. Without Control-M it will require a streaming job or to manually setup a Google Scheduler API Request to DataFlow. On the first case, there will be a cost for running the engine even when there is no data being processed.
         c. With Control-M we can create an hourly/daily job to only spend resources on DataFlow when there is data to be processed.
 
+#### Service Principal Authentication limitaton
+    Only Local Connection Profiles are supported when the authentication method is set as Service Account. Centralized Connection Profiles are not supported for thhis Authentication Method.
+    Managed VM Identity supports Centralized Connection Profile.
 
- 
+
