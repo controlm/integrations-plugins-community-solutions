@@ -28,11 +28,11 @@ Note: This plugin is not compatible with bmc Helix Control-M
 
 * #### 1. Authentication using Databricks personal access tokens.                
 
-![](./images/connection_profile.png)
+![connection_profile](./images/connection_profile.png)
 
 * #### 2. Trigger jobs with parameters based any Notebook.
 
-![jobparams](./images/job_params.png)
+![jobparams](./images/jobparams.png)
 
 * #### 3. Return the results of the job steps to the output in the Control-M Monitoring domain.  
 
