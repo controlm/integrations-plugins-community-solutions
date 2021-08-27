@@ -23,6 +23,14 @@ A number of steps would be performed prior to a data RPA being triggered. Prior 
 source is generated as an output from the application. Automating the end to end process provides clear and decisive 
 visibility and management of the entire ecosystem, bonding RPAs with supplying applications.
 
+#### Pre requisites
+
+Control-M Version 9.20.000,
+Fixpack 9.0.20.100,
+Application pack Patch 9.0.20.101
+
+Note: This plugin is not compatible with bmc Helix Control-M
+
 #### Features
 
 * #### 1. External application authentication.
