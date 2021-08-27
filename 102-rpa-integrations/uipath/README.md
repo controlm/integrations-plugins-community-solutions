@@ -57,7 +57,7 @@ visibility and management of the entire ecosystem, bonding RPAs with supplying a
 | Connection Profile Name | The name of the connection profile |
 | Tenant Name | UI Path Tenant Name |
 | Tenant Url | UI Path Tenant Url. |
-| App ID | UI Path External App ID. See the following link on how to define an external app in UI Path Orchestrator https://docs.uipath.com/automation-cloud/docs/managing-external-applications#providing-details-to-developers |
+| App ID | UI Path External App ID. See the following link on how to define a confidential external app in UI Path Orchestrator. Note the following application scopes were used for this integration. (OR.Folders OR.Execution OR.Jobs OR.Robots OR.Administration OR.Monitoring) https://docs.uipath.com/automation-cloud/docs/managing-external-applications#providing-details-to-developers |
 | App Secret | Generated when defining an external app. |
 | Connection Timeout | Process trigger time-out in seconds. This will set the response wait limit for starting a process  |
 
