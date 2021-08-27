@@ -48,7 +48,9 @@ visibility and management of the entire ecosystem, bonding RPAs with supplying a
 
 ![connection](./images/uipccp.png)
 
+
     ===== UI Path Connection Profile Fields Description =====
+
 
 | Field | Value |
 | --- | --- |
@@ -63,7 +65,9 @@ visibility and management of the entire ecosystem, bonding RPAs with supplying a
 
 ![jobdefinition](./images/uipjob.png)
 
+
     ===== UI Path Job Fields Description =====
+
 
 | Field | Value |
 | --- | --- |
