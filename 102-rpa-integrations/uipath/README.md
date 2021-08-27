@@ -1,9 +1,6 @@
 # Control-M UI Path plugin
 Version 1.0.00
 
-### Go directly to the Quick Start Guide
-https://pmbmc.github.io/UiPathdocs/#/quickstart
-
 ### Short description:
 Control-M Integration plugin for UI Path (UiPath) RPAs.
 
