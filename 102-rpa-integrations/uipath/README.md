@@ -62,6 +62,7 @@ visibility and management of the entire ecosystem, bonding RPAs with supplying a
 #### UI Path Job Definition
 
 ![jobdefinition](./images/uipjob.png)
+
     ===== UI Path Job Fields Description =====
 
 | Field | Value |
