@@ -23,7 +23,7 @@ Note: This plugin is not compatible with bmc Helix Control-M
 
 ### Features
 
-* #### 1. Principal account (access key) and IAM authentications
+* #### 1. Principal account (access key and secret) and IAM authentications
 
 #####  Using access key and secret
 
