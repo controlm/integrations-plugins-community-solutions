@@ -9,37 +9,44 @@ AWS Lambda is a serverless compute service where you can write and run code with
 AWS Lambda plugin for Control-M enables the integration of AWS Lambda functions with the rest of your application 
 ecosystem.
 The Lambda function is invoked synchronously by the plugin.
-You can trigger the lambda function from Control-M with arguments (JSON format) or with no parameters and then enter {}.
 
 ### Authentication
 When working with services on AWS infrastructure, IAM role authentication is addressed (AssumeRole).
 When working outside of AWS infrastructure, authentication is via access key id and secret key (SigV4).
 
-#### Pre requisites
-
+### Pre requisites
 Control-M Version 9.20.000,
 Fixpack 9.0.20.100,
 Application pack Patch 9.0.20.101
 
 Note: This plugin is not compatible with bmc Helix Control-M
 
-#### Features
+### Features
 
-* #### 1. Principal account and IAM 
+* #### 1. Principal account (access key) and IAM authentications
+
+#####  Using access key and secret
+```
 
 ![connection_profile-access_key](./images/connection_profile-access_key.png)
 
+#####  Using IAM role
+```
+
 ![connection_profile-iam_role](./images/connection_profile-iam_role.png)
 
-* #### 2. Trigger function with arguments.
 
-Note: Arguments is a mandatory field. When no arguments Enter {}
+* #### 2. Trigger function with arguments
+
+Note: When no arguments Enter {}
 
 ![jobparams](./images/jobparams.png)
+
 
 * #### 3. Return the result of the function to the output in the Control-M Monitoring domain.  
 
 ![output](./images/output.png)
+
 
 * #### 4. Integrate AWS Lambda functions runs with all existing Control-M capabilities.  
     For example : 
@@ -50,24 +57,10 @@ Note: Arguments is a mandatory field. When no arguments Enter {}
         d. Attach prior and post dependancy steps to your workflow for a fully encompassed view of your environment.
         e. A single reference point for the entire lifecycle of your data, from creation to analytics.
 
+
 * #### 5. Automation API Connection Profile samples
 
-##### Using IAM Role
-```
 
-"AWS_IAMROLE": {
-    "Type": "ConnectionProfile:ApplicationIntegrator:AI awslambda",
-    "AI-IAM Role": "iam-role-name",
-    "AI-AWS Access Key": "*****",
-    "AI-AWS Secret": "*****",
-    "AI-region": "aws-region",
-    "AI-url": "lambda-url",
-    "AI-Connection Timeout": "50",
-    "AI-Authentication Method": "IAMROLE",
-    "Description": "",
-    "Centralized": true
-  },
-```
 #####  Using access key and secret
 ```
 
@@ -85,6 +78,24 @@ Note: Arguments is a mandatory field. When no arguments Enter {}
   }
 
 ```
+
+##### Using IAM Role
+```
+
+"AWS_IAMROLE": {
+    "Type": "ConnectionProfile:ApplicationIntegrator:AI awslambda",
+    "AI-IAM Role": "iam-role-name",
+    "AI-AWS Access Key": "*****",
+    "AI-AWS Secret": "*****",
+    "AI-region": "aws-region",
+    "AI-url": "lambda-url",
+    "AI-Connection Timeout": "50",
+    "AI-Authentication Method": "IAMROLE",
+    "Description": "",
+    "Centralized": true
+  },
+```
+
 
 * #### 6. Automation API JSON job sample
 
