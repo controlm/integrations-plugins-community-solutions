@@ -1,10 +1,10 @@
 # Control-M AWS Lambda plugin
 Version 1.0.00
 
-### Short description:
+### Short description
 Control-M Integration plugin for AWS Lambda.
  
-### Detailed description:
+### Detailed description
 AWS Lambda is a serverless compute service where you can write and run code without server management.
 AWS Lambda plugin for Control-M enables the integration of AWS Lambda functions with the rest of your application 
 ecosystem.
@@ -26,12 +26,11 @@ Note: This plugin is not compatible with bmc Helix Control-M
 * #### 1. Principal account (access key) and IAM authentications
 
 #####  Using access key and secret
-```
 
 ![connection_profile-access_key](./images/connection_profile-access_key.png)
 
+
 #####  Using IAM role
-```
 
 ![connection_profile-iam_role](./images/connection_profile-iam_role.png)
 
