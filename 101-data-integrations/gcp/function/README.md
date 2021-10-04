@@ -2,7 +2,7 @@
 Version 1.0.00
 
 ### Short description:
-Control-M Integration plugin for Google Cloud Functions jobs.
+Control-M Integration plugin for Google Cloud Functions jobs. 
  
 ### Detailed description:
 
