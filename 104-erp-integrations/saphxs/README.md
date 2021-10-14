@@ -1,11 +1,10 @@
-# Control-M Sap Hana plugin
+# Control-M Sap Hana Cloud Job Scheduler plugin
 Version 1.0.00
 
 ### Short description:
-Control-M Integration plugin for Sap Hana Cloud
+Control-M Integration plugin for SAP Hana Job Scheduling Service, This service runs in the Cloud Foundry environment.
 
 Created on 13-Oct-2021
-
   
 #### Pre requisites
 
@@ -13,11 +12,10 @@ Control-M Version 9.20.000,
 Fixpack 9.0.20.100,
 Application pack Patch 9.0.20.101
 1.	Ability to access to SAP Cloud Platform, Trial or productive landscape
-2.	To create the simple application, Node.js is required 
 3.	This integration with SAP HANA will only work if the instance of JobScheduler service plan is “Lite”
 4.	The application must be bound with instance of JobScheduler and Authorization & Trust Management (XSUAA)
     For more detail please review this link as an example for creating a sample application and bind it to the instances 
-    Note The example in the link shows how to connect using Oauth2.0 but the connection here is via basic authentication, for more detail please review this SAP document 
+    Note: The example in the link shows how to connect using Oauth2.0 but the connection here is via basic authentication, for more detail please review this SAP document 
 5.	After the binding the make sure the credentials details appear under the Job scheduler
 ![connection](images/JobCredentials.png)
 
