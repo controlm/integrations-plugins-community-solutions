@@ -5,10 +5,6 @@ Version 1.0.00
 Control-M Integration plugin for Sap Hana Cloud
 
 Created on 13-Oct-2021
- 
-### Detailed description:
-
-SAP HANA (high-performance analytic appliance) is an in-memory, column-oriented, relational database management system developed and marketed by SAP Its primary function as the software running a database server is to store and retrieve data as requested by the applications. In addition, it performs advanced analytics (predictive analytics, spatial data processing, text analytics, text search, streaming analytics, graph data processing) and includes extract, transform, load (ETL) capabilities as well as an application server.
 
   
 #### Pre requisites
