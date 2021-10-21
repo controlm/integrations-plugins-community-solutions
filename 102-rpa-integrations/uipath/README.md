@@ -7,7 +7,8 @@ Control-M Integration plugin for UI Path (UiPath) RPAs.
 Created on 13-Oct-2020
 Updated on 13-Oct-2020
 Updated on 27-Aug-2021
- 
+Updated on 20-Oct-2021
+
 ### Detailed description:
 
 The UiPath plugin for Control-M enables the integration of UiPath RPAs with the rest of your application 
@@ -52,6 +53,11 @@ Note: This plugin is not compatible with bmc Helix Control-M
 
 * #### 6. Avoid connection timeouts and unnecessary RPA reruns by way of resource management.
 
+#### Authentication
+
+![connection](./images/uipauthentication.png)
+
+
 #### Connection profile
 
 ![connection](./images/uipccp.png)
@@ -68,6 +74,7 @@ Note: This plugin is not compatible with bmc Helix Control-M
 | App ID | UI Path External App ID. See the following link on how to define a confidential external app in UI Path Orchestrator. Note the following application scopes were used for this integration. (OR.Folders OR.Execution OR.Jobs OR.Robots OR.Administration OR.Monitoring) https://docs.uipath.com/automation-cloud/docs/managing-external-applications#providing-details-to-developers |
 | App Secret | Generated when defining an external app. |
 | Connection Timeout | Process trigger time-out in seconds. This will set the response wait limit for starting a process  |
+
 
 #### UI Path Job Definition
 
