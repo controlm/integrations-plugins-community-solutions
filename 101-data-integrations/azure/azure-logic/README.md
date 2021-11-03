@@ -18,7 +18,9 @@ and Managed Identity.
 
 #### Pre requisites
 
-Control-M Version 9.21.000
+Control-M Version 9.0.21.000
+
+Note: This plugin is not compatible with BMC Helix Control-M
 
 #### Features
 
