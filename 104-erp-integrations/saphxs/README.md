@@ -3,10 +3,15 @@ Version 1.0.00
 
 ### Short description:
 Control-M Integration plugin for SAP Hana Job Scheduling Service, This service runs in the Cloud Foundry environment.
+Job Scheduler is a tool that allows to define jobs, schedule to run regularly, trigger REST endpoints
 
 Created on 13-Oct-2021
 
 #### Use case
+* #### 1. Create an application in Sap Hana Cockpit 
+* #### 2. Exposing a REST endpoint for the application  
+* #### 3. Creating a job in SAP Hana job scheduler pointing to the endpoint
+* #### 4. Control-M invoking the job that runs the application
   
 #### Pre requisites
 
