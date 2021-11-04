@@ -8,11 +8,9 @@ Job Scheduler is a tool that allows to define jobs, schedule to run regularly, t
 Created on 13-Oct-2021
 
 #### Use case
-Long Running Processes i.e IT Process -Integrating with a 3rd party,Enterprise Process – Order fulfillment etc
-In such case, Control M does NOT wait for the response of the called endpoint, Such scenario has to be executed in ASYNCHRONOUS way.
-This means:
-Control-M can Invoke JObJobscheduler triggers an app’s endpoint
-Once the app is done, it calls sort of callback to inform Jobscheduler about the finished job that updated Control-M 
+Long Running Processes i.e IT Process -Integrating with a 3rd party,Enterprise Process – Order fulfillment etc<br>
+In such case, Control-M does NOT wait for the response of the called endpoint, Such scenario has to be executed in ASYNCHRONOUS way.<br>
+This means: Control-M can Invoke JObJobscheduler triggers an app’s endpoint, Once the app is done, it calls sort of callback to inform Jobscheduler about the finished job that updated Control-M <br>
   
 #### Pre requisites
 
