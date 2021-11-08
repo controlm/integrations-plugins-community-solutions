@@ -1,8 +1,8 @@
-#Conversion - Autosys AI FWText
+# Conversion - Autosys AI FWText
 Version 1.0
-##Short description
+## Short description
 Control-M FWText job that will search for existence or absence of a string in a file.
-##Detailed description
+## Detailed description
 You can define a FWText job to search a text file on a Windows or UNIX for a text string.  
 
 The fields in the job are:  
