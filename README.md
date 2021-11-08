@@ -13,11 +13,11 @@ To contribute, please follow these guidelines.
 1. Every sample and its associated files must be contained in its own **folder**. Name this folder something that describes what your sample does. Usually this naming pattern looks like **level-sample-purpose** (e.g. 201-data-vendor-integration). Numbering should start at 101. 100 is reserved for things that need to be at the top.
 
       For consistent categorization, please comply to the following folder structure:
-      + 1-vertical-integration
-      + 2-data-etl
-      + 3-robotic-process-solution-examples
-      + 4-bot-integration-examples
-      + 5-controlm-automation-api-integration-examples
+      + 101-vertical-integrations
+      + 102-data-integrations
+      + 103-robotic-process-solution-integrations
+      + 104-bot-integration-integrations
+      + 105-controlm-automation-api-integrations
 
 2. For consistent ordering **create all folders in lowercase**.
 3. Include a **README.md** file that explains the sample. A good description helps other community members to understand your sample. The README.md uses [Github Flavored Markdown](https://guides.github.com/features/mastering-markdown/) for formatting text. If you want to add images to your README.md file, store the images in the **images** folder. Reference the images in the README.md with a relative path (e.g. `![alt text](images/sampleImage.png "Sample Image Text")`). This ensures the link will reference the target repository if the source repository is forked.
