@@ -3,10 +3,14 @@ Version 1.0.00
 
 ### Short description:
 Control-M Integration plugin for SAP Hana Job Scheduling Service, This service runs in the Cloud Foundry environment.
+Job Scheduler is a tool that allows to define jobs, schedule to run regularly, trigger REST endpoints
 
 Created on 13-Oct-2021
 
 #### Use case
+Long Running Processes i.e IT Process -Integrating with a 3rd party,Enterprise Process – Order fulfillment etc<br>
+In such case, Control-M does NOT wait for the response of the called endpoint, Such scenario has to be executed in ASYNCHRONOUS way.<br>
+This means: Control-M can Invoke JObJobscheduler triggers an app’s endpoint, Once the app is done, it calls sort of callback to inform Jobscheduler about the finished job that updated Control-M <br>
   
 #### Pre requisites
 
@@ -16,7 +20,7 @@ Application pack Patch 9.0.20.200
 1.	Ability to access to SAP Cloud Platform, Trial or productive landscape
 3.	This integration with SAP HANA will only work if the instance of JobScheduler service plan is “Lite”
 4.	The application must be bound with instance of JobScheduler and Authorization & Trust Management (XSUAA)
-    For more detail please review this link as an example for creating a sample application and bind it to the instances 
+    For more detail please review [this link](https://blogs.sap.com/2020/04/23/using-job-scheduler-in-sap-cloud-platform-5-long-running-async-jobs/) as an example for creating a sample application and bind it to the instances 
     Note: The example in the link shows how to connect using Oauth2.0 but the connection here is via basic authentication, for more detail please review this SAP document 
 5.	After the binding the make sure the credentials details appear under the Job scheduler
 ![connection](images/JobCredentials.png)
