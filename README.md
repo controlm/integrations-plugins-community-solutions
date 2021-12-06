@@ -22,5 +22,23 @@ To contribute, please follow these guidelines.
 2. For consistent ordering **create all folders in lowercase**.
 3. Include a **README.md** file that explains the sample. A good description helps other community members to understand your sample. The README.md uses [Github Flavored Markdown](https://guides.github.com/features/mastering-markdown/) for formatting text. If you want to add images to your README.md file, store the images in the **images** folder. Reference the images in the README.md with a relative path (e.g. `![alt text](images/sampleImage.png "Sample Image Text")`). This ensures the link will reference the target repository if the source repository is forked.
 
+### Saving Application Integrator files for use
+
+1. Go to the specific file you want to download
+   
+![connprof](./images/1aispecific.jpg)
+
+2. In the file page, click on the “Raw” button
+   
+![connprof](./images/2raw.jpg)
+
+3. click Ctrl+S and save
+
+![connprof](./images/3rawdetails.jpg)
+![connprof](./images/4saveasscreen.jpg)
+
+4. Import from Control-M Application Integrator designer
+
+
 ## Questions/Feedback
 Please use issues on GitHub for questions or feedback about the examples included in this repository.
