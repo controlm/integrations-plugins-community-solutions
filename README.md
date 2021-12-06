@@ -26,19 +26,20 @@ To contribute, please follow these guidelines.
 
 1. Go to the specific file you want to download
    
-![connprof](./images/1aispecific.jpg)
+![filesav](./images/1aispecific.jpg)
 
 2. In the file page, click on the “Raw” button
    
-![connprof](./images/2raw.jpg)
+![filesav](./images/2raw.jpg)
 
 3. click Ctrl+S and save
 
-![connprof](./images/3rawdetails.jpg)
-![connprof](./images/4saveasscreen.jpg)
+![filesav](./images/3rawdetails.jpg)
+![filesav](./images/4saveasscreen.jpg)
 
 4. Import from Control-M Application Integrator designer
 
+![filesav](./images/5importai.png)
 
 ## Questions/Feedback
 Please use issues on GitHub for questions or feedback about the examples included in this repository.
