@@ -36,6 +36,7 @@ To contribute, please follow these guidelines.
 
 ![filesav](./images/3rawdetails.jpg)
 ![filesav](./images/4saveasscreen.jpg)
+   ##### Note: When saving, remove the .txt extension and change it to .ctmai
 
 4. Import from Control-M Application Integrator designer
 
