@@ -41,11 +41,11 @@ Uses the published [SAP IBP API] (104-erp-integrations\sapibp\ExternalJobSchedul
         In either case, you should validate, per the SAP IBP API manual, that all components have completed.<br>
         See OData Call to Cancel / Unschedule a Job on the (104-erp-integrations\sapibp\resources\ExternalJobScheduling_Official.pdf)
 * Return Codes
-    * rc=0: IBP Reported completion successfully. JobStatus="F"
-    * rc=10: URL for SAP IBP is malformed. Likely cause it is missing the "-api"
+    * rc=0: IBP Reported completion successfully. JobStatus="F".
+    * rc=10: URL for SAP IBP is malformed. Likely cause it is missing the "-api".
     * rc=11: The Template Text or Name specified could not be found.
-    * rc=12: The execution in SAP IBP still continues after Control-M job ended. Likely a timeout without a request for termination.
-    * rc=13: The execution in SAP IBP terminated with JobStatus=A. The job was cancelled in SAP IBP, or a timeout with termination occurred.
+    * rc=12: The execution in SAP IBP still continues after Control-M job ended. Likely a timeout without a request for termination. JobStatus="R".
+    * rc=13: The execution in SAP IBP terminated with JobStatus=A. The job was cancelled in SAP IBP, or a timeout with termination occurred. JobStatus="A".
     * rc=14: There was an unknown return code (JobStatus different from A, F, or R)
     * rc=24: The job was manually killed from Control-M. An attempt to terminate the SAP IBP job was automatically sent.
 
