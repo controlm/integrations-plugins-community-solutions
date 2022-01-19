@@ -12,7 +12,7 @@ Control-M Integration plugin for SAP IBP.
 
 ## Download 
 
-[PlugIn jobtype](104-erp-integrations/sapibp/resources\AI_SAPIBP.ctmai)
+[PlugIn jobtype](104-erp-integrations/sapibp/resources/AI_SAPIBP.ctmai)
   
 ## Pre requisites
 
@@ -57,3 +57,6 @@ Uses the published [SAP IBP API](104-erp-integrations/sapibp/ExternalJobScheduli
 ### Sample CCP provided
 
 * [See](104-erp-integrations/sapibp/resources/AI_SAP_IBP_CP.json)
+
+## Overall flow for the plugin
+![SAP IBP Plugin flow](104-erp-integrations/sapibp/images/AppInt Flow.pdf)
