@@ -2,7 +2,6 @@
   "SAPIBP": {
     "Type": "ConnectionProfile:ApplicationIntegrator:AI SAPIBP",
     "AI-Port": "443",
-    "AI-Iteration": "15",
     "AI-Service URL": "/sap/opu/odata/sap/BC_EXT_APPJOB_MANAGEMENT;v=0002",
     "AI-Password": "*****",
     "AI-User Name": "JOBSCHEDULER",
