@@ -39,7 +39,7 @@ Uses the published [SAP IBP API](resources/ExternalJobScheduling_Official.pdf)
     * Allows to specify the Maximum Duration (timeout) expected on each job.
         If the jobs surpasses the Maximum Duration, you can select to attempt to kill the SAP IBP job, or let it continue.<br>
         In either case, you should validate, per the SAP IBP API manual, that all components have completed.<br>
-        See OData Call to Cancel / Unschedule a Job on the (104-erp-integrations\sapibp\resources\ExternalJobScheduling_Official.pdf)
+        See OData Call to Cancel / Unschedule a Job on the (resources/ExternalJobScheduling_Official.pdf)
 * Return Codes
     * rc=0: IBP Reported completion successfully. JobStatus="F".
     * rc=10: URL for SAP IBP is malformed. Likely cause it is missing the "-api".
