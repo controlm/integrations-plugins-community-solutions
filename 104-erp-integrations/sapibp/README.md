@@ -54,9 +54,11 @@ Uses the published [SAP IBP API](104-erp-integrations/sapibp/ExternalJobScheduli
 ### Test Jobs provided
 
 * [See](104-erp-integrations/sapibp/resources/AI_SAP_IBP_Test_Jobs.json)
+
 ### Sample CCP provided
 
 * [See](104-erp-integrations/sapibp/resources/AI_SAP_IBP_CP.json)
 
 ## Overall flow for the plugin
-![SAP IBP Plugin flow](104-erp-integrations/sapibp/images/AppInt Flow.pdf)
+
+![SAP IBP Plugin flow](104-erp-integrations/sapibp/images/AppInt_Flow.pdf)
