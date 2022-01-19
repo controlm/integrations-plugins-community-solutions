@@ -12,7 +12,7 @@ Control-M Integration plugin for SAP IBP.
 
 ## Download 
 
-[PlugIn jobtype](104-erp-integrations/sapibp/resources/AI_SAPIBP.ctmai)
+[PlugIn jobtype](resources/AI_SAPIBP.ctmai)
   
 ## Pre requisites
 
@@ -26,7 +26,7 @@ Control-M Integration plugin for SAP IBP.
 
 ### SAP IBP
 
-Uses the published [SAP IBP API](104-erp-integrations/sapibp/ExternalJobScheduling_Official.pdf)
+Uses the published [SAP IBP API](resources/ExternalJobScheduling_Official.pdf)
 
 
 ## Features
@@ -53,12 +53,12 @@ Uses the published [SAP IBP API](104-erp-integrations/sapibp/ExternalJobScheduli
 
 ### Test Jobs provided
 
-* [See Sample JSON Test Jobs](104-erp-integrations/sapibp/resources/AI_SAP_IBP_Test_Jobs.json)
+* [See Sample JSON Test Jobs](resources/AI_SAP_IBP_Test_Jobs.json)
 
 ### Sample CCP provided
 
-* [See Connection Profile](104-erp-integrations/sapibp/resources/AI_SAP_IBP_CP.json)
+* [See Connection Profile](resources/AI_SAP_IBP_CP.json)
 
 ## Overall flow for the plugin
 
-![SAP IBP Plugin flow](104-erp-integrations/sapibp/images/AppInt_Flow.pdf)
+![SAP IBP Plugin flow](images/AppInt_Flow.pdf)
