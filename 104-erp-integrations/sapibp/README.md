@@ -46,7 +46,7 @@ Uses the published [SAP IBP API] (104-erp-integrations\sapibp\ExternalJobSchedul
     * rc=11: The Template Text or Name specified could not be found.
     * rc=12: The execution in SAP IBP still continues after Control-M job ended. Likely a timeout without a request for termination.
     * rc=13: The execution in SAP IBP terminated with JobStatus=A. The job was cancelled in SAP IBP, or a timeout with termination occurred.
-    * rc=14: There was an unknown return code (JobStatus different from A or F)
+    * rc=14: There was an unknown return code (JobStatus different from A, F, or R)
     * rc=24: The job was manually killed from Control-M. An attempt to terminate the SAP IBP job was automatically sent.
 
 ## Test information
