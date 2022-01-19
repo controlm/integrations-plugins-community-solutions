@@ -48,6 +48,7 @@ Uses the published [SAP IBP API](resources/ExternalJobScheduling_Official.pdf)
     * rc=13: The execution in SAP IBP terminated with JobStatus=A. The job was cancelled in SAP IBP, or a timeout with termination occurred. JobStatus="A".
     * rc=14: There was an unknown return code (JobStatus different from A, F, or R)
     * rc=15: The job was manually killed from Control-M. An attempt to terminate the SAP IBP job was automatically sent.
+    * rc=24: An attempt to run on a **Windows agent** made the job fail.
 
 ## Test information
 
