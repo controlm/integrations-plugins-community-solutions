@@ -1,209 +1,267 @@
 {
-  "sap_ibp_KOT" : {
-    "Type" : "Folder",
-    "ControlmServer" : "IN01",
-    "SubApplication" : "IBP",
-    "CreatedBy" : "daniel_companeetz@bmc.com",
-    "Description" : "6 test jobs",
-    "OrderMethod" : "Manual",
-    "Application" : "SAP",
-    "When" : {
-      "RuleBasedCalendars" : {
-        "Included" : [ "EVERYDAY" ],
-        "EVERYDAY" : {
-          "Type" : "Calendar:RuleBased",
-          "When" : {
-            "DaysRelation" : "OR",
-            "WeekDays" : [ "NONE" ],
-            "MonthDays" : [ "ALL" ]
+  "sap_ibp_KOT": {
+    "Type": "Folder",
+    "ControlmServer": "IN01",
+    "Description": "10 sample test jobs\\n\\nhttps://github.com/SAPmpane/integrations-plugins-community-solutions/tree/master/104-erp-integrations/sapibp",
+    "OrderMethod": "Manual",
+    "SubApplication": "IBP",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "Application": "SAP",
+    "When": {
+      "RuleBasedCalendars": {
+        "Included": [
+          "EVERYDAY"
+        ],
+        "EVERYDAY": {
+          "Type": "Calendar:RuleBased",
+          "When": {
+            "DaysRelation": "OR",
+            "WeekDays": [
+              "NONE"
+            ],
+            "MonthDays": [
+              "ALL"
+            ]
           }
         }
       }
     },
-    "AI SAPIBP_1M_KOT" : {
-      "Type" : "Job:ApplicationIntegrator:AI SAPIBP",
-      "ConnectionProfile" : "SAPIBP",
-      "AI-Text/Name?" : "Name",
-      "AI-Job Template" : "YY1_Z7ILD5434AQPOZXYTXYTQXTJ6MM",
-      "AI-User" : "IBPUSER",
-      "AI-Max Duration" : "1",
-      "AI-Kill IBP job on timeout?" : "checked",
+    "AI SAPIBP_1M_KOT": {
+      "Type": "Job:ApplicationIntegrator:AI SAPIBP",
+      "ConnectionProfile": "SAPIBP",
+      "AI-Text/Name?": "Name",
+      "AI-Job Template": "YY1_Z7ILDEmoSAmpleOHLU6JGXNPOIA",
+      "AI-User": "IBPUSER",
+      "AI-Max Duration": "1",
+      "AI-Kill IBP job on timeout?": "checked",
       "AI-Iteration": "15",
-      "SubApplication" : "IBP",
-      "Confirm" : true,
-      "Host" : "dc01-saasagsand",
-      "CreatedBy" : "daniel_companeetz@bmc.com",
-      "Description" : "Job lasts 2 minutes but timeout is one minute. Kill on Timeout.",
-      "RunAs" : "SAPIBP",
-      "Application" : "SAP",
-      "When" : {
-        "WeekDays" : [ "NONE" ],
-        "MonthDays" : [ "ALL" ],
-        "DaysRelation" : "OR"
+      "SubApplication": "IBP",
+      "Confirm": true,
+      "Host": "dc01-saasagsand",
+      "CreatedBy": "daniel_companeetz@bmc.com",
+      "RunAs": "SAPIBP",
+      "Application": "SAP",
+      "When": {
+        "WeekDays": [
+          "NONE"
+        ],
+        "MonthDays": [
+          "ALL"
+        ],
+        "DaysRelation": "OR"
       }
     },
-    "AI SAPIBP_1m_nKOT" : {
-      "Type" : "Job:ApplicationIntegrator:AI SAPIBP",
-      "ConnectionProfile" : "SAPIBP",
-      "AI-Text/Name?" : "Name",
-      "AI-Job Template" : "YY1_Z7ILD5434AQPOZXYTXYTQXTJ6MM",
-      "AI-User" : "IBPUSER",
-      "AI-Max Duration" : "1",
-      "AI-Kill IBP job on timeout?" : "unchecked",
+    "AI SAPIBP_1m_nKOT": {
+      "Type": "Job:ApplicationIntegrator:AI SAPIBP",
+      "ConnectionProfile": "SAPIBP",
+      "AI-Text/Name?": "Name",
+      "AI-Job Template": "YY1_Z7ILDEmoSAmpleQPNXOHLU6JGXNPOIA",
+      "AI-User": "IBPUSER",
+      "AI-Max Duration": "1",
+      "AI-Kill IBP job on timeout?": "unchecked",
       "AI-Iteration": "15",
-      "SubApplication" : "IBP",
-      "Confirm" : true,
-      "Host" : "dc01-saasagsand",
-      "CreatedBy" : "daniel_companeetz@bmc.com",
-      "Description" : "Job lasts 2 minutes but timeout is one minute. Does NOT Kill on Timeout.",
-      "RunAs" : "SAPIBP",
-      "Application" : "SAP",
-      "When" : {
-        "WeekDays" : [ "NONE" ],
-        "MonthDays" : [ "ALL" ],
-        "DaysRelation" : "OR"
+      "SubApplication": "IBP",
+      "Confirm": true,
+      "Host": "dc01-saasagsand",
+      "CreatedBy": "daniel_companeetz@bmc.com",
+      "RunAs": "SAPIBP",
+      "Application": "SAP",
+      "When": {
+        "WeekDays": [
+          "NONE"
+        ],
+        "MonthDays": [
+          "ALL"
+        ],
+        "DaysRelation": "OR"
       }
     },
-    "AI SAPIBP_1M_Text_not_found" : {
-      "Type" : "Job:ApplicationIntegrator:AI SAPIBP",
-      "ConnectionProfile" : "SAPIBP",
-      "AI-Job Template" : "TemplateText Not To Be Found",
-      "AI-User" : "IBPUSER",
-      "AI-Max Duration" : "1",
-      "AI-Kill IBP job on timeout?" : "checked",
+    "AI SAPIBP_5m_KOT": {
+      "Type": "Job:ApplicationIntegrator:AI SAPIBP",
+      "ConnectionProfile": "SAPIBP",
+      "AI-Job Template": "CPI - External Job Scheduling",
+      "AI-User": "IBPUSER",
+      "AI-Kill IBP job on timeout?": "checked",
       "AI-Iteration": "15",
-      "SubApplication" : "IBP",
-      "Confirm" : true,
-      "Host" : "dc01-saasagsand",
-      "CreatedBy" : "daniel_companeetz@bmc.com",
-      "Description" : "The template TEXT is not found.",
-      "RunAs" : "SAPIBP",
-      "Application" : "SAP",
-      "When" : {
-        "WeekDays" : [ "NONE" ],
-        "MonthDays" : [ "ALL" ],
-        "DaysRelation" : "OR"
+      "SubApplication": "IBP",
+      "Confirm": true,
+      "Host": "dc01-saasagsand",
+      "CreatedBy": "daniel_companeetz@bmc.com",
+      "RunAs": "SAPIBP",
+      "Application": "SAP",
+      "When": {
+        "WeekDays": [
+          "NONE"
+        ],
+        "MonthDays": [
+          "ALL"
+        ],
+        "DaysRelation": "OR"
       }
     },
-    "AI SAPIBP_1M_Tmplt_not_found" : {
-      "Type" : "Job:ApplicationIntegrator:AI SAPIBP",
-      "ConnectionProfile" : "SAPIBP",
-      "AI-Text/Name?" : "Name",
-      "AI-Job Template" : "TemplateName Not To Be Found",
-      "AI-User" : "IBPUSER",
-      "AI-Max Duration" : "1",
-      "AI-Kill IBP job on timeout?" : "checked",
+    "AI SAPIBP_5m_nKOT": {
+      "Type": "Job:ApplicationIntegrator:AI SAPIBP",
+      "ConnectionProfile": "SAPIBP",
+      "AI-Job Template": "External_Job_ScheduliÑg_Prueba.",
+      "AI-User": "IBPUSER",
+      "AI-Kill IBP job on timeout?": "unchecked",
       "AI-Iteration": "15",
-      "SubApplication" : "IBP",
-      "Confirm" : true,
-      "Host" : "dc01-saasagsand",
-      "CreatedBy" : "daniel_companeetz@bmc.com",
-      "Description" : "The template NAME is not found.",
-      "RunAs" : "SAPIBP",
-      "Application" : "SAP",
-      "When" : {
-        "WeekDays" : [ "NONE" ],
-        "MonthDays" : [ "ALL" ],
-        "DaysRelation" : "OR"
+      "SubApplication": "IBP",
+      "Confirm": true,
+      "Host": "dc01-saasagsand",
+      "CreatedBy": "daniel_companeetz@bmc.com",
+      "RunAs": "SAPIBP",
+      "Application": "SAP",
+      "When": {
+        "WeekDays": [
+          "NONE"
+        ],
+        "MonthDays": [
+          "ALL"
+        ],
+        "DaysRelation": "OR"
       }
     },
-    "AI SAPIBP_5m_Kill_this" : {
-      "Type" : "Job:ApplicationIntegrator:AI SAPIBP",
-      "ConnectionProfile" : "SAPIBP",
-      "AI-Job Template" : "CPI - External Job Scheduling",
-      "AI-User" : "IBPUSER",
-      "AI-Kill IBP job on timeout?" : "checked",
+    "AI SAPIBP_5m_Kill_this": {
+      "Type": "Job:ApplicationIntegrator:AI SAPIBP",
+      "ConnectionProfile": "SAPIBP",
+      "AI-Job Template": "CPI - External Job Scheduling",
+      "AI-User": "IBPUSER",
+      "AI-Kill IBP job on timeout?": "checked",
       "AI-Iteration": "15",
-      "SubApplication" : "IBP",
-      "Confirm" : true,
-      "Host" : "dc01-saasagsand",
-      "CreatedBy" : "daniel_companeetz@bmc.com",
-      "RunAs" : "SAPIBP",
-      "Application" : "SAP",
-      "When" : {
-        "WeekDays" : [ "NONE" ],
-        "MonthDays" : [ "ALL" ],
-        "DaysRelation" : "OR"
+      "SubApplication": "IBP",
+      "Confirm": true,
+      "Host": "dc01-saasagsand",
+      "CreatedBy": "daniel_companeetz@bmc.com",
+      "RunAs": "SAPIBP",
+      "Application": "SAP",
+      "When": {
+        "WeekDays": [
+          "NONE"
+        ],
+        "MonthDays": [
+          "ALL"
+        ],
+        "DaysRelation": "OR"
       }
     },
-    "AI SAPIBP_5m" : {
-      "Type" : "Job:ApplicationIntegrator:AI SAPIBP",
-      "ConnectionProfile" : "SAPIBP",
-      "AI-Job Template" : "CPI - External Job Scheduling",
-      "AI-User" : "IBPUSER",
-      "AI-Kill IBP job on timeout?" : "checked",
+    "AI SAPIBP_1M_Tmplt_not_found": {
+      "Type": "Job:ApplicationIntegrator:AI SAPIBP",
+      "ConnectionProfile": "SAPIBP",
+      "AI-Text/Name?": "Name",
+      "AI-Job Template": "TemplateName Not To Be Found",
+      "AI-User": "IBPUSER",
+      "AI-Max Duration": "1",
+      "AI-Kill IBP job on timeout?": "checked",
       "AI-Iteration": "15",
-      "SubApplication" : "IBP",
-      "Confirm" : true,
-      "Host" : "dc01-saasagsand",
-      "CreatedBy" : "daniel_companeetz@bmc.com",
-      "Description" : "Job lasts 2 minutes but timeout is 5 minute. Timeout does not trigger. Run twice and test manual kill after 30 seconds to one minute.",
-      "RunAs" : "SAPIBP",
-      "Application" : "SAP",
-      "When" : {
-        "WeekDays" : [ "NONE" ],
-        "MonthDays" : [ "ALL" ],
-        "DaysRelation" : "OR"
+      "SubApplication": "IBP",
+      "Confirm": true,
+      "Host": "dc01-saasagsand",
+      "CreatedBy": "daniel_companeetz@bmc.com",
+      "RunAs": "SAPIBP",
+      "Application": "SAP",
+      "When": {
+        "WeekDays": [
+          "NONE"
+        ],
+        "MonthDays": [
+          "ALL"
+        ],
+        "DaysRelation": "OR"
       }
     },
-    "AI SAPIBP_CCP_Check" : {
-      "Type" : "Job:ApplicationIntegrator:AI SAPIBP",
-      "ConnectionProfile" : "SAPIBP",
-      "AI-Job Template" : "CPI - External Job Scheduling",
-      "AI-User" : "IBPUSER",
-      "AI-Kill IBP job on timeout?" : "unchecked",
+    "AI SAPIBP_1M_Text_not_found": {
+      "Type": "Job:ApplicationIntegrator:AI SAPIBP",
+      "ConnectionProfile": "SAPIBP",
+      "AI-Job Template": "TemplateText Not To Be Found",
+      "AI-User": "IBPUSER",
+      "AI-Max Duration": "1",
+      "AI-Kill IBP job on timeout?": "checked",
       "AI-Iteration": "15",
-      "SubApplication" : "IBP",
-      "Confirm" : true,
-      "Host" : "dc01-saasagsand",
-      "CreatedBy" : "daniel_companeetz@bmc.com",
-      "Description" : "Change the connection profile to have a host that is not conformant. (my123456-api.scmibp.ondemand.com) The job should fail.",
-      "RunAs" : "SAPIBP",
-      "Application" : "SAP",
-      "When" : {
-        "WeekDays" : [ "NONE" ],
-        "MonthDays" : [ "ALL" ],
-        "DaysRelation" : "OR"
+      "SubApplication": "IBP",
+      "Confirm": true,
+      "Host": "dc01-saasagsand",
+      "CreatedBy": "daniel_companeetz@bmc.com",
+      "RunAs": "SAPIBP",
+      "Application": "SAP",
+      "When": {
+        "WeekDays": [
+          "NONE"
+        ],
+        "MonthDays": [
+          "ALL"
+        ],
+        "DaysRelation": "OR"
       }
     },
-    "AI SAPIBP_multi_step_fails" : {
-      "Type" : "Job:ApplicationIntegrator:AI SAPIBP",
-      "ConnectionProfile" : "SAPIBP",
-      "AI-Job Template" : "CPI - SUP - OUT - Web Service",
-      "AI-User" : "IBPUSER",
-      "AI-Kill IBP job on timeout?" : "checked",
+    "AI SAPIBP_CCP_Check": {
+      "Type": "Job:ApplicationIntegrator:AI SAPIBP",
+      "ConnectionProfile": "SAPIBP",
+      "AI-Job Template": "External_Job_ScheduliÑg_Prueba.",
+      "AI-User": "IBPUSER",
+      "AI-Kill IBP job on timeout?": "unchecked",
       "AI-Iteration": "15",
-      "SubApplication" : "IBP",
-      "Confirm" : true,
-      "Host" : "dc01-saasagsand",
-      "CreatedBy" : "daniel_companeetz@bmc.com",
-      "Description" : "Multistep IBP job that fails in the middle",
-      "RunAs" : "SAPIBP",
-      "Application" : "SAP",
-      "When" : {
-        "WeekDays" : [ "NONE" ],
-        "MonthDays" : [ "ALL" ],
-        "DaysRelation" : "OR"
+      "SubApplication": "IBP",
+      "Confirm": true,
+      "Host": "dc01-saasagsand",
+      "CreatedBy": "daniel_companeetz@bmc.com",
+      "Description": "Change the connection profile to have a host that is not conformant. (my123456-api.scmibp.ondemand.com) The job should fail.",
+      "RunAs": "SAPIBP",
+      "Application": "SAP",
+      "When": {
+        "WeekDays": [
+          "NONE"
+        ],
+        "MonthDays": [
+          "ALL"
+        ],
+        "DaysRelation": "OR"
       }
     },
-    "AI SAPIBP_multi_step_ok" : {
-      "Type" : "Job:ApplicationIntegrator:AI SAPIBP",
-      "ConnectionProfile" : "SAPIBP",
-      "AI-Job Template" : "CPI - GPO - DM - Conversion factors",
-      "AI-User" : "IBPUSER",
-      "AI-Kill IBP job on timeout?" : "checked",
+    "AI SAPIBP_multi_step_ok": {
+      "Type": "Job:ApplicationIntegrator:AI SAPIBP",
+      "ConnectionProfile": "SAPIBP",
+      "AI-Job Template": "CPI - GPO - DM - Conversion",
+      "AI-User": "IBPUSER",
+      "AI-Kill IBP job on timeout?": "checked",
       "AI-Iteration": "15",
-      "SubApplication" : "IBP",
-      "Confirm" : true,
-      "Host" : "dc01-saasagsand",
-      "CreatedBy" : "daniel_companeetz@bmc.com",
-      "Description" : "Multistep IBP job successful all the way",
-      "RunAs" : "SAPIBP",
-      "Application" : "SAP",
-      "When" : {
-        "WeekDays" : [ "NONE" ],
-        "MonthDays" : [ "ALL" ],
-        "DaysRelation" : "OR"
+      "SubApplication": "IBP",
+      "Confirm": true,
+      "Host": "dc01-saasagsand",
+      "CreatedBy": "daniel_companeetz@bmc.com",
+      "RunAs": "SAPIBP",
+      "Application": "SAP",
+      "When": {
+        "WeekDays": [
+          "NONE"
+        ],
+        "MonthDays": [
+          "ALL"
+        ],
+        "DaysRelation": "OR"
+      }
+    },
+    "AI SAPIBP_multi_step_fails": {
+      "Type": "Job:ApplicationIntegrator:AI SAPIBP",
+      "ConnectionProfile": "SAPIBP",
+      "AI-Job Template": "CPI - SUP - OUT - Web Service",
+      "AI-User": "IBPUSER",
+      "AI-Kill IBP job on timeout?": "checked",
+      "AI-Iteration": "15",
+      "SubApplication": "IBP",
+      "Confirm": true,
+      "Host": "dc01-saasagsand",
+      "CreatedBy": "daniel_companeetz@bmc.com",
+      "RunAs": "SAPIBP",
+      "Application": "SAP",
+      "When": {
+        "WeekDays": [
+          "NONE"
+        ],
+        "MonthDays": [
+          "ALL"
+        ],
+        "DaysRelation": "OR"
       }
     }
   }

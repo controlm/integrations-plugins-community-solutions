@@ -61,4 +61,4 @@ Uses the published [SAP IBP API](resources/ExternalJobScheduling_Official.pdf)
 
 ## Overall flow for the plugin
 
-![SAP IBP Plugin flow](images/AppInt_Flow.pdf)
+![SAP IBP Plugin flow](images/AppInt_Flow.png)

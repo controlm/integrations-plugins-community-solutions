@@ -5,8 +5,8 @@
     "AI-Service URL": "/sap/opu/odata/sap/BC_EXT_APPJOB_MANAGEMENT;v=0002",
     "AI-Password": "*****",
     "AI-User Name": "JOBSCHEDULER",
-    "AI-Host": "my123456-api.scmibp.ondemand.com",
-    "Description": "",
+    "AI-Host": "my123456-api.sapibp.ondemand.com",
+    "Description": "Sample Connection Profile\\\n\\\nhttps://github.com/dcompane/integrations-plugins-community-solutions/tree/master/104-erp-integrations/sapibp",
     "Centralized": true
   }
 }
