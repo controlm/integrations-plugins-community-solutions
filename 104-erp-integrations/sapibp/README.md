@@ -12,21 +12,21 @@ Control-M Integration plugin for SAP IBP.
 
 ## Download 
 
-[PlugIn jobtype]: (104-erp-integrations\sapibp\resources\AI_SAPIBP.ctmai)
+[PlugIn jobtype](104-erp-integrations/sapibp/resources\AI_SAPIBP.ctmai)
   
 ## Pre requisites
 
 ### Control-M
 
 * Helix Control-M 
-* Helix Control-M Agent v9.0.20.180+ [strong]only on Linux[/strong].
+* Helix Control-M Agent v9.0.20.180+ **only on Linux**.
 * Application pack v9.0.20.180+
 
 > NOTE: It is likely compatible with Control-M on-premise systems, but it has not yet been tested with it.
 
 ### SAP IBP
 
-Uses the published [SAP IBP API] (104-erp-integrations\sapibp\ExternalJobScheduling_Official.pdf)
+Uses the published [SAP IBP API](104-erp-integrations/sapibp/ExternalJobScheduling_Official.pdf)
 
 
 ## Features
