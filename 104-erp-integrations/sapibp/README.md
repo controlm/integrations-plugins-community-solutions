@@ -12,7 +12,7 @@ Control-M Integration plugin for SAP IBP.
 
 ## Download 
 
-[PlugIn jobtype](104-erp-integrations/sapibp/resources\AI_SAPIBP.ctmai)
+[PlugIn jobtype](resources/AI_SAPIBP.ctmai)
   
 ## Pre requisites
 
@@ -26,7 +26,7 @@ Control-M Integration plugin for SAP IBP.
 
 ### SAP IBP
 
-Uses the published [SAP IBP API](104-erp-integrations/sapibp/ExternalJobScheduling_Official.pdf)
+Uses the published [SAP IBP API](resources/ExternalJobScheduling_Official.pdf)
 
 
 ## Features
@@ -39,7 +39,7 @@ Uses the published [SAP IBP API](104-erp-integrations/sapibp/ExternalJobScheduli
     * Allows to specify the Maximum Duration (timeout) expected on each job.
         If the jobs surpasses the Maximum Duration, you can select to attempt to kill the SAP IBP job, or let it continue.<br>
         In either case, you should validate, per the SAP IBP API manual, that all components have completed.<br>
-        See OData Call to Cancel / Unschedule a Job on the (104-erp-integrations\sapibp\resources\ExternalJobScheduling_Official.pdf)
+        See OData Call to Cancel / Unschedule a Job on the [API documentation](resources/ExternalJobScheduling_Official.pdf)
 * Return Codes
     * rc=0: IBP Reported completion successfully. JobStatus="F".
     * rc=10: URL for SAP IBP is malformed. Likely cause it is missing the "-api".
@@ -47,13 +47,20 @@ Uses the published [SAP IBP API](104-erp-integrations/sapibp/ExternalJobScheduli
     * rc=12: The execution in SAP IBP still continues after Control-M job ended. Likely a timeout without a request for termination. JobStatus="R".
     * rc=13: The execution in SAP IBP terminated with JobStatus=A. The job was cancelled in SAP IBP, or a timeout with termination occurred. JobStatus="A".
     * rc=14: There was an unknown return code (JobStatus different from A, F, or R)
-    * rc=24: The job was manually killed from Control-M. An attempt to terminate the SAP IBP job was automatically sent.
+    * rc=15: The job was manually killed from Control-M. An attempt to terminate the SAP IBP job was automatically sent.
+    * rc=24: An attempt to run on a **Windows agent** made the job fail.
 
 ## Test information
 
 ### Test Jobs provided
 
-* [See](104-erp-integrations/sapibp/resources/AI_SAP_IBP_Test_Jobs.json)
+* [See Sample JSON Test Jobs](resources/AI_SAP_IBP_Test_Jobs.json)
+
 ### Sample CCP provided
 
-* [See](104-erp-integrations/sapibp/resources/AI_SAP_IBP_CP.json)
+* [See Connection Profile](resources/AI_SAP_IBP_CP.json)
+
+## Overall flow for the plugin
+
+[Download PDF](images/AppInt_Flow.pdf)
+![SAP IBP Plugin flow](images/AppInt_Flow.png)
