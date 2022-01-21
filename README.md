@@ -1,46 +1,114 @@
-# Control-M custom integrations plugins community solutions
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
+</p>
 
-This repository contains community built application integrations for Control-M Application Integrator.  
+<h3 align="center">Project Title</h3>
 
-## Compatibility Note
+<div align="center">
 
-Please check individual integrations README files for Control-M version and application compatibility 
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
-## Contribution guide
-To contribute, please follow these guidelines.
+</div>
 
-### Files, folders and naming conventions
-1. Every sample and its associated files must be contained in its own **folder**. Name this folder something that describes what your sample does. Usually this naming pattern looks like **level-sample-purpose** (e.g. 201-data-vendor-integration). Numbering should start at 101. 100 is reserved for things that need to be at the top.
+---
 
-      For consistent categorization, please comply to the following folder structure:
-      + 101-vertical-integrations
-      + 102-data-integrations
-      + 103-robotic-process-solution-integrations
-      + 104-bot-integration-integrations
-      + 105-controlm-automation-api-integrations
+<p align="center"> Few lines describing your project.
+    <br> 
+</p>
 
-2. For consistent ordering **create all folders in lowercase**.
-3. Include a **README.md** file that explains the sample. A good description helps other community members to understand your sample. The README.md uses [Github Flavored Markdown](https://guides.github.com/features/mastering-markdown/) for formatting text. If you want to add images to your README.md file, store the images in the **images** folder. Reference the images in the README.md with a relative path (e.g. `![alt text](images/sampleImage.png "Sample Image Text")`). This ensures the link will reference the target repository if the source repository is forked.
+## 📝 Table of Contents
 
-### Saving Application Integrator files for use
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Deployment](#deployment)
+- [Usage](#usage)
+- [Built Using](#built_using)
+- [TODO](../TODO.md)
+- [Contributing](../CONTRIBUTING.md)
+- [Authors](#authors)
+- [Acknowledgments](#acknowledgement)
 
-1. Go to the specific file you want to download
-   
-![filesav](./images/1aispecific.jpg)
+## 🧐 About <a name = "about"></a>
 
-2. In the file page, click on the “Raw” button
-   
-![filesav](./images/2raw.jpg)
+Write about 1-2 paragraphs describing the purpose of your project.
 
-3. click Ctrl+S and save
+## 🏁 Getting Started <a name = "getting_started"></a>
 
-![filesav](./images/3rawdetails.jpg)
-![filesav](./images/4saveasscreen.jpg)
-   ##### Note: When saving, remove the .txt extension and change it to .ctmai
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
-4. Import from Control-M Application Integrator designer
+### Prerequisites
 
-![filesav](./images/5importai.png)
+What things you need to install the software and how to install them.
 
-## Questions/Feedback
-Please use issues on GitHub for questions or feedback about the examples included in this repository.
+```
+Give examples
+```
+
+### Installing
+
+A step by step series of examples that tell you how to get a development env running.
+
+Say what the step will be
+
+```
+Give the example
+```
+
+And repeat
+
+```
+until finished
+```
+
+End with an example of getting some data out of the system or using it for a little demo.
+
+## 🔧 Running the tests <a name = "tests"></a>
+
+Explain how to run the automated tests for this system.
+
+### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+## 🎈 Usage <a name="usage"></a>
+
+Add notes about how to use the system.
+
+## 🚀 Deployment <a name = "deployment"></a>
+
+Add additional notes about how to deploy this on a live system.
+
+## ⛏️ Built Using <a name = "built_using"></a>
+
+- [MongoDB](https://www.mongodb.com/) - Database
+- [Express](https://expressjs.com/) - Server Framework
+- [VueJs](https://vuejs.org/) - Web Framework
+- [NodeJs](https://nodejs.org/en/) - Server Environment
+
+## ✍️ Authors <a name = "authors"></a>
+
+- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
+
+See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
+
+## 🎉 Acknowledgements <a name = "acknowledgement"></a>
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- References
