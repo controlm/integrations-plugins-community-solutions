@@ -35,13 +35,16 @@ Uses the published [SAP IBP API](resources/ExternalJobScheduling_Official.pdf)
 
 * Authentication: Uses Basic Authentication
 * Connection Profile:
-  * Includes a configurable cycle time to avoid overloading the SAP IBP platform with excessive verification requests (default=60 seconds)
+  * Enter the host, port, Communication User and Password. The Password will be obscured.
+    > The jobtype does not check for User locked. This may return rc=14 (Unknown return code)
+    Hostname should include the "-api" section. (See rc=10 below)
 * Job Fields
   * Can be specified with a choice of the Template Name or the Template Text. Most users know the Template Text, but the API requires the Template Name to start the job.
   * Allows to specify the Maximum Duration (timeout) expected on each job.<br>
      If the jobs surpasses the Maximum Duration, you can select to attempt to kill the SAP IBP job, or let it continue.<br>
      In either case, you should validate, per the SAP IBP API manual, that all components have completed.<br>
      See OData Call to Cancel / Unschedule a Job on the [API documentation](resources/ExternalJobScheduling_Official.pdf)
+  * Includes a configurable cycle time to avoid overloading the SAP IBP platform with excessive verification requests (default=60 seconds)
 * Return Codes
   * rc=0: IBP Reported completion successfully. JobStatus="F".
   * rc=10: URL for SAP IBP is malformed. Likely cause it is missing the "-api".
