@@ -36,7 +36,7 @@ Uses the published [SAP IBP API](resources/ExternalJobScheduling_Official.pdf)
 * Authentication: Uses Basic Authentication
 * Connection Profile:
   * Enter the host, port, Communication User and Password. The Password will be obscured.
-    > The jobtype does not check for User locked. This may return rc=14 (Unknown return code)
+    > The jobtype does not check for User locked. This may return rc=14 (Unknown return code)<br>
     Hostname should include the "-api" section. (See rc=10 below)
 * Job Fields
   * Can be specified with a choice of the Template Name or the Template Text. Most users know the Template Text, but the API requires the Template Name to start the job.
