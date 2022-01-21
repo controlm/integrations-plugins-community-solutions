@@ -12,9 +12,9 @@ Control-M Integration plugin for SAP IBP.
 
 ## Download 
 
-* [Click this to download a zip of the PlugIn jobtype](resources/AI_SAPIBP.zip)
+* [Click this to download a zip of the PlugIn jobtype](resources/AI_SAPIBP.zip)<br>
    You will need to unzip the archive and import the file into the Application Integrator designer.
-* [Click this for the uncompressed raw AI_SAPIBP.ctmai file](resources/AI_SAPIBP.ctmai)
+* [Click this for the uncompressed raw AI_SAPIBP.ctmai file](resources/AI_SAPIBP.ctmai)<br>
    This will allow you to copy and paste the raw ctmai file, as described in the repository [Readme](https://github.com/controlm/integrations-plugins-community-solutions#saving-application-integrator-files-for-use).
   
 ## Pre requisites
