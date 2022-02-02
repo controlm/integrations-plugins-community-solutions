@@ -71,7 +71,7 @@ Uses the published [SAP IBP API](resources/ExternalJobScheduling_Official.pdf)
 ![SAP IBP Plugin flow](images/AppInt_Flow.png)
 
 ## Scripts
-The following scripts were used in the AI Steps. <br>
+The following scripts were used in the AI Steps.<br>
 >NOTE: The scripts do not have names in the AI. They were given names to be saved here.
 
 * [CTM_Kill_job.sh](resources/AI_Scripts/CTM_Kill_Job.sh): This is the Abort operation of the Verification Step
