@@ -57,15 +57,23 @@ Uses the published [SAP IBP API](resources/ExternalJobScheduling_Official.pdf)
 
 ## Test information
 
-### Test Jobs provided
-
-* [See Sample JSON Test Jobs](resources/AI_SAP_IBP_Test_Jobs.json)
-
 ### Sample CCP provided
 
-* [See Connection Profile](resources/AI_SAP_IBP_CP.json)
+* [See Connection Profile](resources/AI_Jobs_and_CCP/AI_SAP_IBP_CP.json)
+
+### Test Jobs provided
+
+* [See Sample JSON Test Jobs](resources/AI_Jobs_and_CCP/AI_SAP_IBP_Test_Jobs.json)
 
 ## Overall flow for the plugin
 
 [Download Flow PDF](images/AppInt_Flow.pdf)
 ![SAP IBP Plugin flow](images/AppInt_Flow.png)
+
+## Scripts
+The following scripts were used in the AI Steps.<br>
+>NOTE: The scripts do not have names in the AI. They were given names to be saved here.
+
+* [CTM_Kill_job.sh](resources/AI_Scripts/CTM_Kill_Job.sh): This is the Abort operation of the Verification Step
+* [CTM_IBP_Terminate.sh](resources/AI_Scripts/CTM_IBP_Terminate.sh): This is the IBP termination if Max Duration (Timeout) was exceeded
+* [CTM_AI_PostProc.sh](resources/AI_Scripts/CTM_Kill_Job.sh): This is the Post Processing script
