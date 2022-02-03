@@ -3,7 +3,7 @@
 # THIS IS A JOBCANCEL script
 #set -x
 
-# This is needed for libcurl
+# This is needed for libcurl - KA 000363308
 LD_LIBRARY_PATH=/lib64:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH
 
