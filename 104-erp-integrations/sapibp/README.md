@@ -1,6 +1,12 @@
 # Control-M SAP IBP plugin
 
-First Release: 19-Jan-2022
+## Changes on this version:
+
+| Date | Who | What |
+| - | - | - |
+| 2022-01-19 | Daniel Companeetz | First release |
+| 2022-02-03 | Daniel Companeetz | First upload with this changelog. Multiple changes since first release. |
+
 
 ## Short description
 
@@ -10,13 +16,17 @@ Control-M Integration plugin for SAP IBP.
 >   * 2503171 - Usage of External Job Scheduling solutions with SAP Integrated Business Planning
 >   * 2789802 - IBP - Common JOB issues when using external scheduler
 
-## Download 
+## Download
 
 * [Click this to download a zip of the PlugIn jobtype](resources/AI_SAPIBP.zip)<br>
    Click download and unzip the archive. Then, import the file into the Application Integrator designer.
 * [Click this for the uncompressed raw AI_SAPIBP.ctmai file](resources/AI_SAPIBP.ctmai)<br>
    This will allow you to retrieve the raw ctmai file as described in the repository [Readme](https://github.com/controlm/integrations-plugins-community-solutions#saving-application-integrator-files-for-use).
-  
+* Or use the following command: <br>
+   ```
+   wget -O AISAPIBP.ctmai https://raw.githubusercontent.com/controlm/integrations-plugins-community-solutions/104-erp-integrations/sapibp/resources/AI_SAPIBP.ctmai
+   ```
+
 ## Pre requisites
 
 ### Control-M
@@ -77,3 +87,4 @@ The following scripts were used in the AI Steps.<br>
 * [CTM_Kill_job.sh](resources/AI_Scripts/CTM_Kill_Job.sh): This is the Abort operation of the Verification Step
 * [CTM_IBP_Terminate.sh](resources/AI_Scripts/CTM_IBP_Terminate.sh): This is the IBP termination if Max Duration (Timeout) was exceeded
 * [CTM_AI_PostProc.sh](resources/AI_Scripts/CTM_Kill_Job.sh): This is the Post Processing script
+
