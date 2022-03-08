@@ -1,11 +1,12 @@
 # Control-M SAP IBP plugin
 
-## Changes on this version:
+## Changes on this version
 
 | Date | Who | What |
 | - | - | - |
 | 2022-01-19 | Daniel Companeetz | First release |
 | 2022-02-03 | Daniel Companeetz | First upload with this changelog. Multiple changes since first release. |
+| 2022-02-08 | Daniel Companeetz | README.md: Fixed wget for download |
 
 
 ## Short description
@@ -24,7 +25,7 @@ Control-M Integration plugin for SAP IBP.
    This will allow you to retrieve the raw ctmai file as described in the repository [Readme](https://github.com/controlm/integrations-plugins-community-solutions#saving-application-integrator-files-for-use).
 * Or use the following command: <br>
    ```
-   wget -O AISAPIBP.ctmai https://raw.githubusercontent.com/controlm/integrations-plugins-community-solutions/104-erp-integrations/sapibp/resources/AI_SAPIBP.ctmai
+   wget -O AI_SAPIBP.ctmai https://github.com/controlm/integrations-plugins-community-solutions/blob/master/104-erp-integrations/sapibp/resources/AI_SAPIBP.ctmai
    ```
 
 ## Pre requisites

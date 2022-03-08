@@ -1,4 +1,15 @@
-* Detailed Description
+# Control-M SAP PI plugin
+
+## Changes on this version
+
+| Date | Who | What |
+| - | - | - |
+| 2020-03-11 | Daniel Companeetz | Changed the wait time logic for the start and close module. Sleep was not well constructed for Windows.|
+| 2020-09-22 | Daniel Companeetz | Changed start task protocol to use parameter. Thanks Paul Harbord for input via comments!|
+| 2022-02-03 | Daniel Companeetz | Uploaded to this integration sharing space with no modifications. |
+| 2022-02-08 | Daniel Companeetz | README.md: add download section<br> Reorganize files to resources |
+
+## Detailed Description
 
 This Control-M Application Integrator job type enables the automation of SAP PI channels.
 
@@ -22,15 +33,21 @@ The available actions are:
         Check for a specific status
     Stop the channel
 
-Changes on this version:
 
-| Date | Who | What |
-| - | - | - |
-| 2020-03-11 | Daniel Companeetz | Changed the wait time logic for the start and close module. Sleep was not well constructed for Windows.|
-| 2020-09-22 | Daniel Companeetz | Changed start task protocol to use parameter. Thanks Paul Harbord for input via comments!|
-| 2022-02-03 | Daniel Companeetz | Uploaded to this integration sharing space with no modifications. |
+## Download
 
-Connection Profile
+* [Click this to download a zip of the PlugIn jobtype](resources/AI_SAP_PI.zip)<br>
+   Click download and unzip the archive. Then, import the file into the Application Integrator designer.
+* [Click this for the uncompressed raw AI_SAP_PI.ctmai file](resources/AI_SAP_PI.ctmai)<br>
+   This will allow you to retrieve the raw ctmai file as described in the repository [Readme](https://github.com/controlm/integrations-plugins-community-solutions#saving-application-integrator-files-for-use).
+* Or use the following command: <br>
+   ```
+   wget -O AI_SAP_PI.ctmai https://github.com/controlm/integrations-plugins-community-solutions/blob/master/104-erp-integrations/sappi/resources/AI_SAP_PI.ctmai
+   ```
+
+## Fields and available actions
+
+### Connection Profile
 
     REST Protocol: HTTP/HTTPS
     REST Host: host name that will be used to connect to SAP
@@ -38,9 +55,9 @@ Connection Profile
     User Name: valid SAP username to act on the specified channel
     Password: the username password
 
-SAP PI Job Form
+### SAP PI Job Form
 
-Parameters
+#### Parameters
 
     Party
     Service
@@ -52,18 +69,18 @@ Parameters
     Close Channel time units: minutes/hours
     Raise Alert if error: if the channel did not start with the expected state, write a message and fail the job..
 
-Additional Information
+## Additional Information
 
     The AI plug-in is very verbose as uploaded, to allow easy troubleshooting.
 
 Please provide feedback of your testing and modifications introduced to allows us to learn what is important for future developments.
 
-Requirements
+## Requirements
 
     Control-M/Agent with Control-M Application Integrator plug-in installed, running on Unix/Linux or Windows.
     Control-M/Agent and Control-M Application Integrator 9.0.19 (bundled in Control-M Application Pack), running on Linux and Windows.
 
-Platforms and versions
+## Platforms and versions
 
 The job was created and tested with the following platforms and versions:
 
