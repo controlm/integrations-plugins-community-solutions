@@ -24,7 +24,7 @@ return_code=0
 
 #hostname="Hostname without including https"
 hostname="{{RESTHost}}"
-if [[ ! $hostname =~ ^my[0-9]{6}-api.scmibp[0-9]+.ondemand.com ]]; then
+if [[ ! $hostname =~ ^my[0-9]{6}-api.scmibp[0-9]*.ondemand.com ]]; then
 	# The connection profile has a non-conforming host name.
     echo "----------------------------------------------------------------------------"
     echo "Control-M Job terminated: Improper host in Connection profile (rc=10)"
