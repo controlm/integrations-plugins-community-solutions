@@ -7,13 +7,14 @@ return_code=0
 
 #hostname="Hostname without including https"
 hostname="{{RESTHost}}"
-if [[ ! "$hostname" =~ ^my[0-9]{6}-api.scmibp.ondemand.com ]]; then
+if [[ ! $hostname =~ ^my[0-9]{6}-api.scmibp[0-9]*.ondemand.com ]]; then
 	# The connection profile has a non-conforming host name.
     echo "----------------------------------------------------------------------------"
     echo "Control-M Job terminated: Improper host in Connection profile (rc=10)"
     echo "----------------------------------------------------------------------------"
     echo "Hostname                      | {{RESTHost}}"
-	echo "    Example: my123456-api.scmibp.ondemand.com"
+	echo "    Examples: my123456-api.scmibp.ondemand.com"
+	echo "              my123456-api.scmibp1.ondemand.com"
     echo "----------------------------------------------------------------------------"
     return_code=10
 elif [ "{{IBP_TEMPLATE_NAME}}" == "" ]; then

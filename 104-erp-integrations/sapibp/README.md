@@ -7,8 +7,12 @@
 | 2022-01-19 | Daniel Companeetz | First release |
 | 2022-02-03 | Daniel Companeetz | First upload with this changelog. Multiple changes since first release. |
 | 2022-02-08 | Daniel Companeetz | README.md: Fixed wget for download |
+| 2022-04-08 | Daniel Companeetz | 1. Change handling of SAPIBP url to add numbers 2. Added StartJob script to GitHub.|
 
-
+## Contributions
+| Date | Who | What |
+| - | - | - |
+| 2022-04-08 | Philippe Lago | Noted IBP url may contain numbers (e.g. sapibp1) |
 ## Short description
 
 Control-M Integration plugin for SAP IBP.
