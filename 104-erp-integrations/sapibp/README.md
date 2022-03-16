@@ -8,7 +8,7 @@
 | 2022-02-03 | Daniel Companeetz | First upload with this changelog. Multiple changes since first release. |
 | 2022-02-08 | Daniel Companeetz | README.md: Fixed wget for download |
 | 2022-03-08 | Daniel Companeetz | 1. Change handling of SAPIBP url to add numbers 2. Added StartJob script to GitHub.|
-| 2022-03-16 | Daniel Companeetz | Minor updates to README|
+| 2022-03-16 | Daniel Companeetz | Minor updates to README.|
 
 ## Contributions
 
