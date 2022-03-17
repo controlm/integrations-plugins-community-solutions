@@ -7,12 +7,15 @@
 | 2022-01-19 | Daniel Companeetz | First release |
 | 2022-02-03 | Daniel Companeetz | First upload with this changelog. Multiple changes since first release. |
 | 2022-02-08 | Daniel Companeetz | README.md: Fixed wget for download |
-| 2022-04-08 | Daniel Companeetz | 1. Change handling of SAPIBP url to add numbers 2. Added StartJob script to GitHub.|
+| 2022-03-08 | Daniel Companeetz | 1. Change handling of SAPIBP url to add numbers 2. Added StartJob script to GitHub.|
+| 2022-03-16 | Daniel Companeetz | Minor updates to README|
 
 ## Contributions
+
 | Date | Who | What |
 | - | - | - |
 | 2022-04-08 | Philippe Lago | Noted IBP url may contain numbers (e.g. sapibp1) |
+
 ## Short description
 
 Control-M Integration plugin for SAP IBP.
@@ -23,12 +26,13 @@ Control-M Integration plugin for SAP IBP.
 
 ## Download
 
-* [Click this to download a zip of the PlugIn jobtype](resources/AI_SAPIBP.zip)<br>
+* [Click this to download a zip of the PlugIn jobtype](resources/AI_SAPIBP.zip)  
    Click download and unzip the archive. Then, import the file into the Application Integrator designer.
-* [Click this for the uncompressed raw AI_SAPIBP.ctmai file](resources/AI_SAPIBP.ctmai)<br>
+* [Click this for the uncompressed raw AI_SAPIBP.ctmai file](resources/AI_SAPIBP.ctmai)  
    This will allow you to retrieve the raw ctmai file as described in the repository [Readme](https://github.com/controlm/integrations-plugins-community-solutions#saving-application-integrator-files-for-use).
-* Or use the following command: <br>
-   ```
+* Or use the following command:
+
+   ```bash
    wget -O AI_SAPIBP.ctmai https://github.com/controlm/integrations-plugins-community-solutions/blob/master/104-erp-integrations/sapibp/resources/AI_SAPIBP.ctmai
    ```
 
@@ -51,13 +55,13 @@ Uses the published [SAP IBP API](resources/ExternalJobScheduling_Official.pdf)
 * Authentication: Uses Basic Authentication
 * Connection Profile:
   * Enter the host, port, Communication User and Password. The Password will be obscured.
-    > The jobtype does not check for User locked. This may return rc=14 (Unknown return code)<br>
+    > The jobtype does not check for User locked. This may return rc=14 (Unknown return code)  
     Hostname should include the "-api" section. (See rc=10 below)
 * Job Fields
   * Can be specified with a choice of the Template Name or the Template Text. Most users know the Template Text, but the API requires the Template Name to start the job.
-  * Allows to specify the Maximum Duration (timeout) expected on each job.<br>
-     If the jobs surpasses the Maximum Duration, you can select to attempt to kill the SAP IBP job, or let it continue.<br>
-     In either case, you should validate, per the SAP IBP API manual, that all components have completed.<br>
+  * Allows to specify the Maximum Duration (timeout) expected on each job.  
+     If the jobs surpasses the Maximum Duration, you can select to attempt to kill the SAP IBP job, or let it continue.  
+     In either case, you should validate, per the SAP IBP API manual, that all components have completed.  
      See OData Call to Cancel / Unschedule a Job on the [API documentation](resources/ExternalJobScheduling_Official.pdf)
   * Includes a configurable cycle time to avoid overloading the SAP IBP platform with excessive verification requests (default=60 seconds)
 * Return Codes
@@ -86,10 +90,11 @@ Uses the published [SAP IBP API](resources/ExternalJobScheduling_Official.pdf)
 ![SAP IBP Plugin flow](images/AppInt_Flow.png)
 
 ## Scripts
-The following scripts were used in the AI Steps.<br>
+
+The following scripts were used in the AI Steps.  
 >NOTE: The scripts do not have names in the AI. They were given names to be saved here.
 
+* [CTM_AI_StartJob.sh](resources\AI_Scripts\CTM_AI_StartJob.sh): This is the Abort operation of the Verification Step
 * [CTM_Kill_job.sh](resources/AI_Scripts/CTM_Kill_Job.sh): This is the Abort operation of the Verification Step
 * [CTM_IBP_Terminate.sh](resources/AI_Scripts/CTM_IBP_Terminate.sh): This is the IBP termination if Max Duration (Timeout) was exceeded
 * [CTM_AI_PostProc.sh](resources/AI_Scripts/CTM_Kill_Job.sh): This is the Post Processing script
-
