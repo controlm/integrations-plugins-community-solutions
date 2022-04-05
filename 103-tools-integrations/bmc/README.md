@@ -35,14 +35,14 @@ The job was created and tested with the following platforms and versions:
 
 ## Download
 
-* [Click this to download a zip of the PlugIn jobtype](resources\AI_DISCSCAN.zip)  
+* [Click this to download a zip of the PlugIn jobtype](resources/AI_DISCSCAN.zip)  
    Click download and unzip the archive. Then, import the file into the Application Integrator designer.
-* [Click this for the uncompressed raw AI_SAPIBP.ctmai file](resources\AI_DISCSCAN.ctmai)  
+* [Click this for the uncompressed raw AI_SAPIBP.ctmai file](resources/AI_DISCSCAN.ctmai)  
    This will allow you to retrieve the raw ctmai file as described in the repository [Readme](https://github.com/controlm/integrations-plugins-community-solutions#saving-application-integrator-files-for-use).
 * Or use the following command:
 
    ```bash
-   wget -O AI_SAPIBP.ctmai https://github.com/controlm/integrations-plugins-community-solutions/blob/master/103-tools-integrations\bmc\resources\AI_DISCSCAN.ctmai
+   wget -O AI_SAPIBP.ctmai https://github.com/controlm/integrations-plugins-community-solutions/blob/master/103-tools-integrations/bmc/resources/AI_DISCSCAN.ctmai
    ```
 
 ### Features
