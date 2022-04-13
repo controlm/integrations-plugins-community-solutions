@@ -42,7 +42,7 @@ The job was created and tested with the following platforms and versions:
 * Or use the following command:
 
    ```bash
-   wget -O AI_SAPIBP.ctmai https://github.com/controlm/integrations-plugins-community-solutions/blob/master/103-tools-integrations/bmc/resources/AI_DISCSCAN.ctmai
+   wget -O AI_SAPIBP.ctmai https://github.com/dcompane/integrations-plugins-community-solutions/blob/master/103-tools-integrations/bmc/BMC_Discovery/resources/AI_DISCSCAN.ctmai
    ```
 
 ### Features
