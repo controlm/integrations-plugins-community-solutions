@@ -7,14 +7,21 @@
 | 2022-01-19 | Daniel Companeetz | First release |
 | 2022-02-03 | Daniel Companeetz | First upload with this changelog. Multiple changes since first release. |
 | 2022-02-08 | Daniel Companeetz | README.md: Fixed wget for download |
-| 2022-03-08 | Daniel Companeetz | 1. Change handling of SAPIBP url to add numbers 2. Added StartJob script to GitHub.|
+| 2022-03-08 | Daniel Companeetz | 1. Change handling of SAPIBP url to add numbers <br> 2. Added StartJob script to GitHub.|
 | 2022-03-16 | Daniel Companeetz | Minor updates to README|
+| 2022-06-14 | Daniel Companeetz | Minor updates to README|
 
 ## Contributions
 
 | Date | Who | What |
 | - | - | - |
 | 2022-04-08 | Philippe Lago | Noted IBP url may contain numbers (e.g. sapibp1) |
+
+## Who is using it
+
+| Date | Who | See comments on |
+| - | - | - |
+| 2022-06-10 |[Clint Adams (JR Simplot Company)](https://community.bmc.com/s/profile/0051400000Byd1HAAR) | [AppInt Hub post](https://community.bmc.com/s/news/aA33n000000TWHhCAO/sap-ibp-job-type-linuxbash) |
 
 ## Short description
 
