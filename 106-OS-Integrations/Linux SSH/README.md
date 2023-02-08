@@ -26,7 +26,6 @@ Helix Control-M Integration plugin for SSH remote execution.
 
 This integration allows to execute jobs on a any platform that accepts submission via SSH, from a Linux Helix Control-M agent.
 
-
 ## Download
 
 * [Click this to download a zip of the PlugIn jobtype](resources/AI_DCOSSH.zip)  
