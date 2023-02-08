@@ -36,7 +36,7 @@ This integration allows to execute jobs on a any platform that accepts submissio
 * Or use the following command:
 
    ```bash
-   wget -O AI_IBMiSSH.ctmai https://github.com/controlm/integrations-plugins-community-solutions/blob/master/104-erp-integrations/sapibp/resources/AI_DCOSSH.ctmai
+   wget -O AI_DCOSSH.ctmai https://github.com/controlm/integrations-plugins-community-solutions/raw/master/106-OS-Integrations/Linux%20SSH/resources/AI_DCOSSH.ctmai
    ```
 
 ## Pre requisites

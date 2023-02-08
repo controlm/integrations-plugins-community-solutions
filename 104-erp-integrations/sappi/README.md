@@ -42,7 +42,7 @@ The available actions are:
    This will allow you to retrieve the raw ctmai file as described in the repository [Readme](https://github.com/controlm/integrations-plugins-community-solutions#saving-application-integrator-files-for-use).
 * Or use the following command: <br>
    ```
-   wget -O AI_SAP_PI.ctmai https://github.com/controlm/integrations-plugins-community-solutions/blob/master/104-erp-integrations/sappi/resources/AI_SAP_PI.ctmai
+   wget -O AI_SAP_PI.ctmai https://github.com/controlm/integrations-plugins-community-solutions/raw/master/104-erp-integrations/sappi/resources/AI_SAP_PI.ctmai
    ```
 
 ## Fields and available actions
