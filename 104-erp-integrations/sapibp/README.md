@@ -40,7 +40,7 @@ Control-M Integration plugin for SAP IBP.
 * Or use the following command:
 
    ```bash
-   wget -O AI_SAPIBP.ctmai https://github.com/controlm/integrations-plugins-community-solutions/blob/master/104-erp-integrations/sapibp/resources/AI_SAPIBP.ctmai
+   wget -O AI_SAPIBP.ctmai https://github.com/controlm/integrations-plugins-community-solutions/raw/master/104-erp-integrations/sapibp/resources/AI_SAPIBP.ctmai
    ```
 
 ## Pre requisites

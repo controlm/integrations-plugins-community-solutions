@@ -33,17 +33,17 @@ The available actions are:
         Check for a specific status
     Stop the channel
 
-
 ## Download
 
 * [Click this to download a zip of the PlugIn jobtype](resources/AI_SAP_PI.zip)<br>
    Click download and unzip the archive. Then, import the file into the Application Integrator designer.
 * [Click this for the uncompressed raw AI_SAP_PI.ctmai file](resources/AI_SAP_PI.ctmai)<br>
    This will allow you to retrieve the raw ctmai file as described in the repository [Readme](https://github.com/controlm/integrations-plugins-community-solutions#saving-application-integrator-files-for-use).
-* Or use the following command: <br>
-   ```
-   wget -O AI_SAP_PI.ctmai https://github.com/controlm/integrations-plugins-community-solutions/blob/master/104-erp-integrations/sappi/resources/AI_SAP_PI.ctmai
-   ```
+* Or use the following command:
+
+  ```bash
+  wget -O AI_SAP_PI.ctmai https://github.com/controlm/integrations-plugins-community-solutions/raw/master/104-erp-integrations/sappi/resources/AI_SAP_PI.ctmai
+  ```
 
 ## Fields and available actions
 
