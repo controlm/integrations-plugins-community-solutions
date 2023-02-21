@@ -5,6 +5,7 @@
 | - | - | - |
 | 2022-07-18 | Mathieu Petit | First release |
 | 2022-10-05 | Mathieu Petit | Add Manual abort operation step, add Text box with load button to display Templates and Inventories |
+| 2022-11-04 | Mathieu Petit | Add a Text Area to enter extra_vars |
 
 
 ## Contributions
