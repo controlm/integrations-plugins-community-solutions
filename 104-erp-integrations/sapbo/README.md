@@ -111,33 +111,6 @@ supported by BMC.
 | Report Prompts <br> xml | Text Area |
 
 
-+-------------------+--------------------------------------------------+
-| **Attribut**      | **Format**                                       |
-+===================+==================================================+
-| Report Type       | Dropdown List                                    |
-|                   |                                                  |
-|                   | ![](vertopal_d928622f9963465cba9260d5cce71e4     |
-|                   | 2/media/image9.png) 							   |
-|                   |                    						       |
-+-------------------+--------------------------------------------------+
-| Report CUID       | Text Box                                         |
-+-------------------+--------------------------------------------------+
-| Instance title    | Text Box                                         |
-+-------------------+--------------------------------------------------+
-| Polling           | Text Box, default value 20                       |
-+-------------------+--------------------------------------------------+
-| Outut Format      | Dropdown List                                    |
-|                   |                                                  |
-|                   | ![](vertopal_d928622f9963465cba9260d5cce71e      |
-|                   | 42/media/image10.png)                            |
-+-------------------+--------------------------------------------------+
-| Output            | Text Area                                        |
-| Destinations xml  |                                                  |
-+-------------------+--------------------------------------------------+
-| Report Prompts    | Text Area                                        |
-| xml               |                                                  |
-+-------------------+--------------------------------------------------+
-
 -   Form customization
 
     ![](media/image11.png)
@@ -229,15 +202,10 @@ height="3.4295527121609797in"}
 The body is:
 
 \<schedule\>
-
-\<name\>{{A_INSTANCE}}\</name\>
-
-{{D_FORMAT}}
-
-{{D_DESTINATION}}
-
-{{D_PARAMS}}
-
+	\<name\>{{A_INSTANCE}}\</name\>
+	{{D_FORMAT}}
+	{{D_DESTINATION}}
+	{{D_PARAMS}}
 \</schedule\>
 
 -   Output Handling tab
