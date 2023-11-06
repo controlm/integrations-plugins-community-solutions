@@ -102,11 +102,11 @@ supported by BMC.
 
 | **Attribut** | **Format** |
 | --- | --- |
-| Report Type  | Dropdown List![](vertopal_d928622f9963465cba9260d5cce71e42/media/image9.png) |
+| Report Type  | Dropdown List![](media/image9.png) |
 | Report CUID | Text Box  | 
 | Instance title | Text Box  | 
 | Polling | Text Box, default value 20 |
-| Outut Format | Dropdown List![](vertopal_d928622f9963465cba9260d5cce71e42/media/image10.png) |
+| Outut Format | Dropdown List ![](media/image10.png) |
 | Output <br> Destinations xml | Text Area |
 | Report Prompts <br> xml | Text Area |
 
