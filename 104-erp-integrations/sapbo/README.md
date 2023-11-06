@@ -35,8 +35,8 @@
 14. [Use your new job type in Control-M](#use-your-new-job-type-in-control-m)
 
 
-##Control-M V21 Application Integrator
-###Example of how to create a REST API Integration with SAP Business Objects
+<h2>Control-M V21 Application Integrator</h2>
+<h3>Example of how to create a REST API Integration with SAP Business Objects</h3>
 
 **Introduction**
 
