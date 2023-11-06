@@ -1,8 +1,8 @@
-#Sample integration of Control—M with SAP Business Objects
+Sample integration of Control—M with SAP Business Objects
 
 ==========================================================
 
-**Note:All trademarks are property of their respective owners **
+**Note:All trademarks are property of their respective owners**
 
 
 ## Table of Contents
