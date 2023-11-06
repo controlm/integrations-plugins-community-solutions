@@ -85,37 +85,36 @@ supported by BMC.
 
 -   Enter your credentials in the login screen
 
-![](vertopal_d928622f9963465cba9260d5cce71e42/media/image2.png){width="5.296685258092738in"
+![](vertopal_d928622f9963465cba9260d5cce71e42/media/image2.png)
 
 -   Click on \"Add Plug-in\"
 
-![](vertopal_d928622f9963465cba9260d5cce71e42/media/image3.png){width="6.5in"
-height="1.1729166666666666in"}
+![](vertopal_d928622f9963465cba9260d5cce71e42/media/image3.png)
 
 -   Name your job type and select REST API as the Steps Default
     Interface
 
-![](vertopal_d928622f9963465cba9260d5cce71e42/media/image4.png){width="3.7913254593175854in"
+![](vertopal_d928622f9963465cba9260d5cce71e42/media/image4.png)
 
 #  Add a Connection Profile Attribute in the "Attribute Management" tab 
 
-![](vertopal_d928622f9963465cba9260d5cce71e42/media/image5.png){width="6.262948381452318in"
+![](vertopal_d928622f9963465cba9260d5cce71e42/media/image5.png)
 
 -   HostURL, UserName are Text Box
 
 -   Password is type Password
 
-    ![](vertopal_d928622f9963465cba9260d5cce71e42/media/image6.png){width="2.18542760279965in"
+    ![](vertopal_d928622f9963465cba9260d5cce71e42/media/image6.png)
 
 -   AuthType is 'DropDown List' with Format
 
-    ![](vertopal_d928622f9963465cba9260d5cce71e42/media/image7.png){width="4.942849956255468in"
+    ![](vertopal_d928622f9963465cba9260d5cce71e42/media/image7.png)
 
 # Create the Form
 
 -   Job Definition
 
-![](vertopal_d928622f9963465cba9260d5cce71e42/media/image8.png){width="5.054126202974628in"
+![](vertopal_d928622f9963465cba9260d5cce71e42/media/image8.png)
 
 
 +-------------------+--------------------------------------------------+
