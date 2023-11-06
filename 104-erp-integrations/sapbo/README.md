@@ -1,9 +1,11 @@
 #Sample integration of Control—M with SAP Business Objects
 
+==========================================================
+
 Note:All trademarks are property of their respective owners 
 
 
-### Table of Contents
+## Table of Contents
 
 [1. SAP BO prerequisites
 [3](#sap-business-object-prerequisites)](#sap-business-object-prerequisites)
@@ -65,7 +67,7 @@ Objects. The document is provided as-is for your convenience, and is not
 supported by BMC.
 
 
-### SAP Business Object prerequisites
+# SAP Business Object prerequisites
 
   -----------------------------------------------------------------------
   **Parameter**             **Value**
@@ -79,7 +81,7 @@ supported by BMC.
   Authentication            secEnterprise,secLDAP,secWinAD,secSAPR3
   -----------------------------------------------------------------------
 
-# Application Integrator: create the plugin
+## Application Integrator: create the plugin
 
 ![](media/image1.png)
 
@@ -96,7 +98,7 @@ supported by BMC.
 
 ![](media/image4.png)
 
-#  Add a Connection Profile Attribute in the "Attribute Management" tab 
+##  Add a Connection Profile Attribute in the "Attribute Management" tab 
 
 ![](media/image5.png)
 
@@ -110,7 +112,7 @@ supported by BMC.
 
     ![](media/image7.png)
 
-# Create the Form
+## Create the Form
 
 -   Job Definition
 
@@ -148,7 +150,7 @@ supported by BMC.
 
     ![](media/image11.png)
 
-#  Step Pre-Execution : Get SAP Token
+##  Step Pre-Execution : Get SAP Token
 
 -   REST API tab
 
@@ -163,7 +165,7 @@ The body is:
 
     ![](media/image14.png)
 
-#  Step Get Report ID from CUID
+##  Step Get Report ID from CUID
 
 -   REST API tab
 
@@ -179,7 +181,7 @@ Body is :
 
     ![](media/image17.png)
 
-#  Step PUB Schedule Now
+##  Step PUB Schedule Now
 
 This step will run the Publication report.
 
@@ -201,7 +203,7 @@ v1/publications/{{V_SI_ID}}/schedules/schedule/now
 
     ![](media/image21.png)
 
-# Sub-step PUB Schedule Now : Verify operation completion
+## Sub-step PUB Schedule Now : Verify operation completion
 
 This sub-step runs loop till a specific value is captured in the Json
 response.
@@ -220,7 +222,7 @@ SI_ID={{V_SCHEDULEID}}\"}
     ![](media/image23.png)\
     ![](media/image24.png)
 
-# Step Document Schedule now
+## Step Document Schedule now
 
 Add the step with these 2 options
 
@@ -250,23 +252,23 @@ The body is:
 
     ![](media/image28.png)
 
-# Sub-step Document Schedule: Manual abort operation
+## Sub-step Document Schedule: Manual abort operation
 
 -   REST API tab
 
     ![](media/image29.png)
 
-# Sub-step Document Schedule: Verify operation completion
+## Sub-step Document Schedule: Verify operation completion
 
 REST API tab and Output Handling tab are the same as 8.
 
-# Post-execution : logoff
+## Post-execution : logoff
 
 -   REST API tab
 
 ![](media/image30.png)
 
-# Publish and Deploy your job type
+## Publish and Deploy your job type
 
 Select \"Publish & Deploy\"\
 ![](media/image31.png)
@@ -282,7 +284,7 @@ Integrator plugin to an agent.
 
 ![](media/image33.png)
 
-#  Use your new job type in Control-M
+##  Use your new job type in Control-M
 
 Log in to the Control-M web environment
 
