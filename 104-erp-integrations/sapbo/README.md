@@ -29,7 +29,7 @@
 
 11. [Sub-step Document Schedule: Verify operation completion](#sub-step-document-schedule-verify-operation-completion)
 
-12. [Post-execution : logoff](#post-execution-logoff)](#post-execution-logoff)
+12. [Post-execution : logoff](#post-execution-logoff)
 
 13. [Publish and Deploy your job type](#publish-and-deploy-your-job-type)
 
@@ -55,19 +55,13 @@ supported by BMC.
 
 
 
-# SAP Business Object prerequisites
-|**Parameter**|**Value**|REST API endpoint|http(s)://server_name:6405/biprws|User| |Password| |Authentication| secEnterprise,secLDAP,secWinAD,secSAPR3|
-  -----------------------------------------------------------------------
-  **Parameter**             **Value**
-  ------------------------- ---------------------------------------------
-  REST API endpoint         http(s)://server_name:6405/biprws
-
-  User                      
-
-  Password                  
-
-  Authentication            secEnterprise,secLDAP,secWinAD,secSAPR3
-  -----------------------------------------------------------------------
+## SAP Business Object prerequisites
+| **Parameter** | **Value** |
+| --- | --- |
+| REST API endpoint | http(s)://server_name:6405/biprws |
+| User | | 
+| Password | | 
+| Authentication | secEnterprise,secLDAP,secWinAD,secSAPR3|
 
 ## Application Integrator: create the plugin
 
