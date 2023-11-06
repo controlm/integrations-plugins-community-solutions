@@ -1,0 +1,809 @@
+{
+  "DCO_IBMi": {
+  "Type":  "Folder",
+  "ControlmServer": "IN01",
+  "OrderMethod": "Manual",
+  "SubApplication": "DCO_IBMi",
+  "CreatedBy": "daniel_companeetz@bmc.com",
+  "Application": "DCO",
+  "When": {
+    "RuleBasedCalendars": {
+      "Included": [
+        "EVERYDAY"
+      ],
+      "EVERYDAY": {
+        "Type": "Calendar:RuleBased",
+        "When": {
+          "DaysRelation": "OR",
+          "WeekDays": [
+            "NONE"
+          ],
+          "MonthDays": [
+            "ALL"
+          ]
+        }
+      }
+    }
+  },
+  "DCOIBMi_SBMJOB_WLOG": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost",
+    "AI-IBMi Command": "wrkactjob",
+    "AI-JOB NAME": "DCOWRKJOB",
+    "AI-JOB OWNER": "DCOMPANE",
+    "AI-If Kill is needed": "Controlled",
+    "AI-Use SBMJOB?": "Yes",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "Description": "can be killed to try the kill job function. will use the AI Abort job.",
+    "RunAs": "remotehost",
+    "Application": "DCO",
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_CMDLINE_WLOG": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost",
+    "AI-IBMi Command": "wrkactjob",
+    "AI-If Kill is needed": "Controlled",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "RunAs": "remotehost",
+    "Application": "DCO",
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_CMDLINE_NOLOG": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost",
+    "AI-IBMi Command": "DLYJOB DLY(180)",
+    "AI-If Kill is needed": "Controlled",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "Description": "can be killed to try the kill job function",
+    "RunAs": "remotehost",
+    "Application": "DCO",
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_CMDLINE_SYNTAXERR": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost",
+    "AI-IBMi Command": "wrkctjob",
+    "AI-If Kill is needed": "Controlled",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "RunAs": "remotehost",
+    "Application": "DCO",
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_SBMJOB_NOLOG": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost",
+    "AI-IBMi Command": "dlyjob dly(180)",
+    "AI-JOB NAME": "DCODLYJOB",
+    "AI-JOB OWNER": "DCOMPANE",
+    "AI-If Kill is needed": "Controlled",
+    "AI-Use SBMJOB?": "Yes",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "RunAs": "remotehost",
+    "Application": "DCO",
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_SBMJOB_SYNTAXERR": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost",
+    "AI-IBMi Command": "wrkctjob",
+    "AI-JOB NAME": "DCOWRKJOB",
+    "AI-JOB OWNER": "DCOMPANE",
+    "AI-If Kill is needed": "Controlled",
+    "AI-Use SBMJOB?": "Yes",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "RunAs": "remotehost",
+    "Application": "DCO",
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_SBMJOB_LOG_SECLVL": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost",
+    "AI-IBMi Command": "dlyjob dly(180)",
+    "AI-JOB NAME": "DCODLYJOB",
+    "AI-JOB OWNER": "DCOMPANE",
+    "AI-If Kill is needed": "Controlled",
+    "AI-Use SBMJOB?": "Yes",
+    "AI-LOG": "4 00 *SECLVL",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "RunAs": "remotehost",
+    "Application": "DCO",
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_SBMJOB_NORUN": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost",
+    "AI-IBMi Command": "CALL PGM(NOTTHERE)",
+    "AI-JOB NAME": "DCOBADJOB",
+    "AI-JOB OWNER": "DCOMPANE",
+    "AI-If Kill is needed": "Controlled",
+    "AI-Use SBMJOB?": "Yes",
+    "AI-LOG": "4 0 *SECLVL",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "RunAs": "remotehost",
+    "Application": "DCO",
+    "Variables": [
+      {
+        "UCM-LOGCLGPM": "*Yes"
+      }
+    ],
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_SBMJOB_TOKILL": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost",
+    "AI-IBMi Command": "dlyjob dly(180)",
+    "AI-JOB NAME": "DCODLYJOB",
+    "AI-JOB OWNER": "DCOMPANE",
+    "AI-If Kill is needed": "Controlled",
+    "AI-Use SBMJOB?": "Yes",
+    "AI-LOG": "4 0 *seclvl",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "RunAs": "remotehost",
+    "Application": "DCO",
+    "Variables": [
+      {
+        "UCM-LOGCLGPM": "*YES"
+      }
+    ],
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_SBMJOB_WLOG_QPJ": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost",
+    "AI-IBMi Command": "wrkactjob",
+    "AI-JOB NAME": "DCOWRKJOB",
+    "AI-JOB OWNER": "DCOMPANE",
+    "AI-If Kill is needed": "Controlled",
+    "AI-Use SBMJOB?": "Yes",
+    "AI-LOG": "4 0 *seclvl",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "Description": "can be killed to try the kill job function. will use the AI Abort job.",
+    "RunAs": "remotehost",
+    "Application": "DCO",
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  }
+  },
+ "DCO_IBMiKey_Pass": {
+  "Type":  "Folder",
+  "Variables": [
+    {
+      "CP": "remotehost"
+    }
+  ],
+  "ControlmServer": "IN01",
+  "OrderMethod": "Manual",
+  "RunAs": "%%CP",
+  "SubApplication": "DCO_IBMi",
+  "CreatedBy": "daniel_companeetz@bmc.com",
+  "Application": "DCO",
+  "When": {
+    "RuleBasedCalendars": {
+      "Included": [
+        "EVERYDAY"
+      ],
+      "EVERYDAY": {
+        "Type": "Calendar:RuleBased",
+        "When": {
+          "DaysRelation": "OR",
+          "WeekDays": [
+            "NONE"
+          ],
+          "MonthDays": [
+            "ALL"
+          ]
+        }
+      }
+    }
+  },
+  "DCOIBMi_CMDLINE_NOLOG": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost_SSH_PASS",
+    "AI-IBMi Command": "DLYJOB DLY(180)",
+    "AI-If Kill is needed": "Controlled",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "Description": "can be killed to try the kill job function",
+    "RunAs": "remotehost_SSH_PASS",
+    "Application": "DCO",
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_CMDLINE_SYNTAXERR": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost_SSH_PASS",
+    "AI-IBMi Command": "wrkctjob",
+    "AI-If Kill is needed": "Controlled",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "RunAs": "remotehost_SSH_PASS",
+    "Application": "DCO",
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_CMDLINE_WLOG": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost_SSH_PASS",
+    "AI-IBMi Command": "wrkactjob",
+    "AI-If Kill is needed": "Controlled",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "RunAs": "remotehost_SSH_PASS",
+    "Application": "DCO",
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_SBMJOB_LOG_SECLVL": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost_SSH_PASS",
+    "AI-IBMi Command": "dlyjob dly(180)",
+    "AI-JOB NAME": "DCODLYJOB",
+    "AI-JOB OWNER": "DCOMPANE",
+    "AI-If Kill is needed": "Controlled",
+    "AI-Use SBMJOB?": "Yes",
+    "AI-LOG": "4 00 *SECLVL",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "RunAs": "remotehost_SSH_PASS",
+    "Application": "DCO",
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_SBMJOB_NOLOG": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost_SSH_PASS",
+    "AI-IBMi Command": "dlyjob dly(180)",
+    "AI-JOB NAME": "DCODLYJOB",
+    "AI-JOB OWNER": "DCOMPANE",
+    "AI-If Kill is needed": "Controlled",
+    "AI-Use SBMJOB?": "Yes",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "RunAs": "remotehost_SSH_PASS",
+    "Application": "DCO",
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_SBMJOB_NORUN": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost_SSH_PASS",
+    "AI-IBMi Command": "CALL PGM(NOTTHERE)",
+    "AI-JOB NAME": "DCOBADJOB",
+    "AI-JOB OWNER": "DCOMPANE",
+    "AI-If Kill is needed": "Controlled",
+    "AI-Use SBMJOB?": "Yes",
+    "AI-LOG": "4 0 *SECLVL",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "RunAs": "remotehost_SSH_PASS",
+    "Application": "DCO",
+    "Variables": [
+      {
+        "UCM-LOGCLGPM": "*Yes"
+      }
+    ],
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_SBMJOB_SYNTAXERR": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost_SSH_PASS",
+    "AI-IBMi Command": "wrkctjob",
+    "AI-JOB NAME": "DCOWRKJOB",
+    "AI-JOB OWNER": "DCOMPANE",
+    "AI-If Kill is needed": "Controlled",
+    "AI-Use SBMJOB?": "Yes",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "RunAs": "remotehost_SSH_PASS",
+    "Application": "DCO",
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_SBMJOB_TOKILL": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost_SSH_PASS",
+    "AI-IBMi Command": "dlyjob dly(180)",
+    "AI-JOB NAME": "DCODLYJOB",
+    "AI-JOB OWNER": "DCOMPANE",
+    "AI-If Kill is needed": "Controlled",
+    "AI-Use SBMJOB?": "Yes",
+    "AI-LOG": "4 0 *seclvl",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "RunAs": "remotehost_SSH_PASS",
+    "Application": "DCO",
+    "Variables": [
+      {
+        "UCM-LOGCLGPM": "*YES"
+      }
+    ],
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_SBMJOB_WLOG": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost_SSH_PASS",
+    "AI-IBMi Command": "wrkactjob",
+    "AI-JOB NAME": "DCOWRKJOB",
+    "AI-JOB OWNER": "DCOMPANE",
+    "AI-If Kill is needed": "Controlled",
+    "AI-Use SBMJOB?": "Yes",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "Description": "can be killed to try the kill job function. will use the AI Abort job.",
+    "RunAs": "remotehost_SSH_PASS",
+    "Application": "DCO",
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_SBMJOB_WLOG_QPJ": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost_SSH_PASS",
+    "AI-IBMi Command": "wrkactjob",
+    "AI-JOB NAME": "DCOWRKJOB",
+    "AI-JOB OWNER": "DCOMPANE",
+    "AI-If Kill is needed": "Controlled",
+    "AI-Use SBMJOB?": "Yes",
+    "AI-LOG": "4 0 *seclvl",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "Description": "can be killed to try the kill job function. will use the AI Abort job.",
+    "RunAs": "remotehost_SSH_PASS",
+    "Application": "DCO",
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  }
+  },
+ "DCO_IBMiKey_NoPass": {
+  "Type":  "Folder",
+  "Variables": [
+    {
+      "CP": "remotehost"
+    }
+  ],
+  "ControlmServer": "IN01",
+  "OrderMethod": "Manual",
+  "RunAs": "%%CP",
+  "SubApplication": "DCO_IBMi",
+  "CreatedBy": "daniel_companeetz@bmc.com",
+  "Application": "DCO",
+  "When": {
+    "RuleBasedCalendars": {
+      "Included": [
+        "EVERYDAY"
+      ],
+      "EVERYDAY": {
+        "Type": "Calendar:RuleBased",
+        "When": {
+          "DaysRelation": "OR",
+          "WeekDays": [
+            "NONE"
+          ],
+          "MonthDays": [
+            "ALL"
+          ]
+        }
+      }
+    }
+  },
+  "DCOIBMi_CMDLINE_NOLOG": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost_SSH_NOPASS",
+    "AI-IBMi Command": "DLYJOB DLY(180)",
+    "AI-If Kill is needed": "Controlled",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "Description": "can be killed to try the kill job function",
+    "RunAs": "remotehost_SSH_NOPASS",
+    "Application": "DCO",
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_CMDLINE_SYNTAXERR": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost_SSH_NOPASS",
+    "AI-IBMi Command": "wrkctjob",
+    "AI-If Kill is needed": "Controlled",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "RunAs": "remotehost_SSH_NOPASS",
+    "Application": "DCO",
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_CMDLINE_WLOG": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost_SSH_NOPASS",
+    "AI-IBMi Command": "wrkactjob",
+    "AI-If Kill is needed": "Controlled",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "RunAs": "remotehost_SSH_NOPASS",
+    "Application": "DCO",
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_SBMJOB_LOG_SECLVL": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost_SSH_NOPASS",
+    "AI-IBMi Command": "dlyjob dly(180)",
+    "AI-JOB NAME": "DCODLYJOB",
+    "AI-JOB OWNER": "DCOMPANE",
+    "AI-If Kill is needed": "Controlled",
+    "AI-Use SBMJOB?": "Yes",
+    "AI-LOG": "4 00 *SECLVL",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "RunAs": "remotehost_SSH_NOPASS",
+    "Application": "DCO",
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_SBMJOB_NOLOG": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost_SSH_NOPASS",
+    "AI-IBMi Command": "dlyjob dly(180)",
+    "AI-JOB NAME": "DCODLYJOB",
+    "AI-JOB OWNER": "DCOMPANE",
+    "AI-If Kill is needed": "Controlled",
+    "AI-Use SBMJOB?": "Yes",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "RunAs": "remotehost_SSH_NOPASS",
+    "Application": "DCO",
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_SBMJOB_NORUN": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost_SSH_NOPASS",
+    "AI-IBMi Command": "CALL PGM(NOTTHERE)",
+    "AI-JOB NAME": "DCOBADJOB",
+    "AI-JOB OWNER": "DCOMPANE",
+    "AI-If Kill is needed": "Controlled",
+    "AI-Use SBMJOB?": "Yes",
+    "AI-LOG": "4 0 *SECLVL",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "RunAs": "remotehost_SSH_NOPASS",
+    "Application": "DCO",
+    "Variables": [
+      {
+        "UCM-LOGCLGPM": "*Yes"
+      }
+    ],
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_SBMJOB_SYNTAXERR": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost_SSH_NOPASS",
+    "AI-IBMi Command": "wrkctjob",
+    "AI-JOB NAME": "DCOWRKJOB",
+    "AI-JOB OWNER": "DCOMPANE",
+    "AI-If Kill is needed": "Controlled",
+    "AI-Use SBMJOB?": "Yes",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "RunAs": "remotehost_SSH_NOPASS",
+    "Application": "DCO",
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_SBMJOB_TOKILL": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost_SSH_NOPASS",
+    "AI-IBMi Command": "dlyjob dly(180)",
+    "AI-JOB NAME": "DCODLYJOB",
+    "AI-JOB OWNER": "DCOMPANE",
+    "AI-If Kill is needed": "Controlled",
+    "AI-Use SBMJOB?": "Yes",
+    "AI-LOG": "4 0 *seclvl",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "RunAs": "remotehost_SSH_NOPASS",
+    "Application": "DCO",
+    "Variables": [
+      {
+        "UCM-LOGCLGPM": "*YES"
+      }
+    ],
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_SBMJOB_WLOG": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost_SSH_NOPASS",
+    "AI-IBMi Command": "wrkactjob",
+    "AI-JOB NAME": "DCOWRKJOB",
+    "AI-JOB OWNER": "DCOMPANE",
+    "AI-If Kill is needed": "Controlled",
+    "AI-Use SBMJOB?": "Yes",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "Description": "can be killed to try the kill job function. will use the AI Abort job.",
+    "RunAs": "remotehost_SSH_NOPASS",
+    "Application": "DCO",
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  },
+  "DCOIBMi_SBMJOB_WLOG_QPJ": {
+    "Type": "Job:ApplicationIntegrator:AI DCOIBMiSSH",
+    "ConnectionProfile": "remotehost_SSH_NOPASS",
+    "AI-IBMi Command": "wrkactjob",
+    "AI-JOB NAME": "DCOWRKJOB",
+    "AI-JOB OWNER": "DCOMPANE",
+    "AI-If Kill is needed": "Controlled",
+    "AI-Use SBMJOB?": "Yes",
+    "AI-LOG": "4 0 *seclvl",
+    "SubApplication": "DCO_IBMi",
+    "Host": "linuxagent",
+    "CreatedBy": "daniel_companeetz@bmc.com",
+    "Description": "can be killed to try the kill job function. will use the AI Abort job.",
+    "RunAs": "remotehost_SSH_NOPASS",
+    "Application": "DCO",
+    "When": {
+      "WeekDays": [
+        "NONE"
+      ],
+      "MonthDays": [
+        "ALL"
+      ],
+      "DaysRelation": "OR"
+    }
+  }
+  }
+}

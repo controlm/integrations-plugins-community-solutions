@@ -1,0 +1,43 @@
+{
+  "remotehost_SSH_PASS": {
+    "Type": "ConnectionProfile:ApplicationIntegrator:AI DCOIBMiSSH",
+    "AI-Debug SSHPASS": "-P 'pass'",
+    "AI-User ID": "remoteuser",
+    "AI-Agent OS": "Linux",
+    "AI-Remote Host": "remotehost.bmc.com",
+    "AI-RemotePort": "22",
+    "AI-Use Key": "passphrase",
+    "AI-Identity Key File": "/opt/ctm/saasAgSand/.ssh/remoteuser1",
+    "AI-Disable Host Check": "-o StrictHostKeyChecking=no",
+    "AI-Password/Passphrase": "*****",
+    "Description": "",
+    "Centralized": true
+  },
+  "remotehost_SSH_NOPASS": {
+    "Type": "ConnectionProfile:ApplicationIntegrator:AI DCOIBMiSSH",
+    "AI-Debug SSHPASS": "-P 'pass'",
+    "AI-User ID": "remoteuser",
+    "AI-Agent OS": "Linux",
+    "AI-Remote Host": "remotehost.bmc.com",
+    "AI-RemotePort": "22",
+    "AI-Use Key": "nophrase",
+    "AI-Identity Key File": "/opt/ctm/saasAgSand/.ssh/remoteuser1.nopass",
+    "AI-Disable Host Check": "-o StrictHostKeyChecking=no",
+    "AI-Password/Passphrase": "*****",
+    "Description": "",
+    "Centralized": true
+  },
+  "remotehost": {
+    "Type": "ConnectionProfile:ApplicationIntegrator:AI DCOIBMiSSH",
+    "AI-Debug SSHPASS": "-P 'pass'",
+    "AI-User ID": "remoteuser",
+    "AI-Agent OS": "Linux",
+    "AI-Remote Host": "remotehost.bmc.com",
+    "AI-RemotePort": "22",
+    "AI-Use Key": "password",
+    "AI-Disable Host Check": "-o StrictHostKeyChecking=no",
+    "AI-Password/Passphrase": "*****",
+    "Description": "",
+    "Centralized": true
+  }
+}

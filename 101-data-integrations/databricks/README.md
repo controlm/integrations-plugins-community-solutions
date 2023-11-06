@@ -3,7 +3,7 @@ Version 1.0.00
 
 ### Short description:
 Control-M Integration plugin for Databricks Notebooks jobs based on Databricks REST API 2.0.
-It has been tested with Azure Databricks, however the same API is exposed by Databricks on AWS and Databricks on Google Cloud.
+Authentication is done using Databricks personal access tokens.
 
 ### Detailed description:
 
@@ -14,7 +14,9 @@ Databricks is based on Spark, providing automated cluster management and iPython
 The Darabricks plugin for Control-M enables the integration of Databricks notebooks with your existing Control-M
 workflows.
 
-Authentication can be handled using Databricks personal access tokens.
+#### Authentication
+You generate access token manually in Databricks and update the Connection Profile of the plugin with it.
+If you change your keys regularly, its possible to automate the updating process in the Connection Profile.
 
 #### Pre requisites
 
