@@ -34,17 +34,14 @@
 
 14. [Use your new job type in Control-M](#use-your-new-job-type-in-control-m)
 
-**\
-**
 
-**Control-M V21 Application Integrator\
-***Example of how to create a REST API Integration with SAP Business
-Objects*
+##Control-M V21 Application Integrator
+###Example of how to create a REST API Integration with SAP Business Objects
 
 **Introduction**
 
 Application Integrator is a low code approach to creating an integration
-with Control-M. The integrations are built in a UI designer**.**
+with Control-M. The integrations are built in a UI designer.
 
 This documentation shows an example contributed by a Control-M customer
 who runs SAP Business Objects. It outlines a series of steps that can be
