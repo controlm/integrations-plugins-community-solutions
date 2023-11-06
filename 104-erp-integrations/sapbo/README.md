@@ -1,4 +1,4 @@
-#Sample integration of Control—M with SAP Business Objects
+Sample integration of Control—M with SAP Business Objects
 
 ==========================================================
 
