@@ -198,12 +198,12 @@ Add the step with these 2 options
 
 The body is:
 
-<schedule>
-	<name>{{A_INSTANCE}}</name>
-	{{D_FORMAT}}
-	{{D_DESTINATION}}
-	{{D_PARAMS}}
-</schedule>
+\<schedule\><br>
+	\<name\>{{A_INSTANCE}}\</name\><br>
+	{{D_FORMAT}}<br>
+	{{D_DESTINATION}}<br>
+	{{D_PARAMS}}<br>
+\</schedule\>
 
 -   Output Handling tab
 
