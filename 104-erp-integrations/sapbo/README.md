@@ -1,9 +1,9 @@
-###Sample integration of Control—M with SAP Business Objects
+#Sample integration of Control—M with SAP Business Objects
 
-##Note:All trademarks are property of their respective owners 
+###Note:All trademarks are property of their respective owners 
 
 
-# Table of Contents
+### Table of Contents
 
 [1. SAP BO prerequisites
 [3](#sap-business-object-prerequisites)](#sap-business-object-prerequisites)
@@ -64,9 +64,8 @@ taken by customers to establish a basic integration with SAP Business
 Objects. The document is provided as-is for your convenience, and is not
 supported by BMC.
 
-#  {#section .list-paragraph}
 
-# SAP Business Object prerequisites
+### SAP Business Object prerequisites
 
   -----------------------------------------------------------------------
   **Parameter**             **Value**
