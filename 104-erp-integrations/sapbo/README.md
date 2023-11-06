@@ -100,6 +100,16 @@ supported by BMC.
 
 ![](media/image8.png)
 
+| **Attribut** | **Format** |
+| --- | --- |
+| Report Type  | Dropdown List<br>![](vertopal_d928622f9963465cba9260d5cce71e42/media/image9.png) |
+| Report CUID | Text Box  | 
+| Instance title | Text Box  | 
+| Polling | Text Box, default value 20 |
+| Outut Format | Dropdown List<br>![](vertopal_d928622f9963465cba9260d5cce71e42/media/image10.png) |
+| Output <br> Destinations xml | Text Area |
+| Report Prompts <br> xml | Text Area |
+
 
 +-------------------+--------------------------------------------------+
 | **Attribut**      | **Format**                                       |
