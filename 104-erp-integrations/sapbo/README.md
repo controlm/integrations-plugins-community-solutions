@@ -11,40 +11,29 @@
 
 2. [Application Integrator: create the plugin](#application-integrator-create-the-plugin)
 
-[3. Add a Connection Profile Attribute in the "Attribute Management" tab
-[6](#add-a-connection-profile-attribute-in-the-attribute-management-tab)](#add-a-connection-profile-attribute-in-the-attribute-management-tab)
+3. [Add a Connection Profile Attribute in the "Attribute Management" tab](#add-a-connection-profile-attribute-in-the-attribute-management-tab)
 
-[4. Create the Form [6](#create-the-form)](#create-the-form)
+4. [Create the Form](#create-the-form)
 
-[5. Step Pre-Execution : Get SAP Token
-[8](#step-pre-execution-get-sap-token)](#step-pre-execution-get-sap-token)
+5. [Step Pre-Execution : Get SAP Token](#step-pre-execution-get-sap-token)
 
-[6. Step Get Report ID from CUID
-[11](#step-get-report-id-from-cuid)](#step-get-report-id-from-cuid)
+6. [Step Get Report ID from CUID](#step-get-report-id-from-cuid)
 
-[7. Step PUB Schedule Now
-[12](#step-pub-schedule-now)](#step-pub-schedule-now)
+7. [Step PUB Schedule Now](#step-pub-schedule-now)
 
-[8. Sub-step PUB Schedule Now : Verify operation completion
-[14](#sub-step-pub-schedule-now-verify-operation-completion)](#sub-step-pub-schedule-now-verify-operation-completion)
+8. [Sub-step PUB Schedule Now : Verify operation completion](#sub-step-pub-schedule-now-verify-operation-completion)
 
-[9. Step Document Schedule now
-[16](#step-document-schedule-now)](#step-document-schedule-now)
+9. [Step Document Schedule now](#step-document-schedule-now)
 
-[10. Sub-step Document Schedule: Manual abort operation
-[19](#sub-step-document-schedule-manual-abort-operation)](#sub-step-document-schedule-manual-abort-operation)
+10. [Sub-step Document Schedule: Manual abort operation](#sub-step-document-schedule-manual-abort-operation)
 
-[11. Sub-step Document Schedule: Verify operation completion
-[20](#sub-step-document-schedule-verify-operation-completion)](#sub-step-document-schedule-verify-operation-completion)
+11. [Sub-step Document Schedule: Verify operation completion](#sub-step-document-schedule-verify-operation-completion)
 
-[12. Post-execution : logoff
-[20](#post-execution-logoff)](#post-execution-logoff)
+12. [Post-execution : logoff](#post-execution-logoff)](#post-execution-logoff)
 
-[13. Publish and Deploy your job type
-[20](#publish-and-deploy-your-job-type)](#publish-and-deploy-your-job-type)
+13. [Publish and Deploy your job type](#publish-and-deploy-your-job-type)
 
-[14. Use your new job type in Control-M
-[21](#use-your-new-job-type-in-control-m)](#use-your-new-job-type-in-control-m)
+14. [Use your new job type in Control-M](#use-your-new-job-type-in-control-m)
 
 **\
 **
