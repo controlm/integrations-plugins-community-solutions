@@ -1,4 +1,4 @@
-Sample integration of Control—M with SAP Business Objects
+<H1>Sample integration of Control—M with SAP Business Objects</H1>
 
 ==========================================================
 
@@ -7,9 +7,9 @@ Sample integration of Control—M with SAP Business Objects
 
 ## Table of Contents
 
-1. SAP BO prerequisites[(#sap-business-object-prerequisites)]
+1. [SAP BO prerequisites](#sap-business-object-prerequisites)
 
-2. Application Integrator: create the plugin[(#application-integrator-create-the-plugin)]
+2. [Application Integrator: create the plugin](#application-integrator-create-the-plugin)
 
 [3. Add a Connection Profile Attribute in the "Attribute Management" tab
 [6](#add-a-connection-profile-attribute-in-the-attribute-management-tab)](#add-a-connection-profile-attribute-in-the-attribute-management-tab)
