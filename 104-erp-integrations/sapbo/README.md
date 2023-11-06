@@ -199,10 +199,10 @@ Add the step with these 2 options
 The body is:
 
 \<schedule\><br>
-<pre><pre>\<name\>{{A_INSTANCE}}\</name\><br>
-<pre><pre>{{D_FORMAT}}<br>
-<pre><pre>{{D_DESTINATION}}<br>
-<pre><pre>{{D_PARAMS}}<br>
+  \<name\>{{A_INSTANCE}}\</name\><br>
+  {{D_FORMAT}}<br>
+  {{D_DESTINATION}}<br>
+  {{D_PARAMS}}<br>
 \</schedule\>
 
 -   Output Handling tab
