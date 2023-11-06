@@ -38,7 +38,7 @@
 <h2>Control-M V21 Application Integrator</h2>
 <h3>Example of how to create a REST API Integration with SAP Business Objects</h3>
 
-<b>Introduction</b>
+**Introduction**
 
 Application Integrator is a low code approach to creating an integration
 with Control-M. The integrations are built in a UI designer.
