@@ -1,7 +1,7 @@
-[]{#_Toc72225198 .anchor}**\
+#Sample integration of Control—M with SAP Business Objects
 **
 
-# Table of Contents {#table-of-contents .list-paragraph .TOC-Heading}
+# Table of Contents 
 
 [[1](#_Toc72225198)](#_Toc72225198)
 
