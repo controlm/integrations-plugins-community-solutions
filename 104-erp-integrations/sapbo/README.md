@@ -1,6 +1,5 @@
 <H1>Sample integration of Control—M with SAP Business Objects</H1>
 
-==========================================================
 
 **Note:All trademarks are property of their respective owners**
 
@@ -179,20 +178,18 @@ response.
 
 The query is:
 
-{\"query\":\"SELECT SI_SCHEDULE_STATUS FROM CI_INFOOBJECTS WHERE
-SI_ID={{V_SCHEDULEID}}\"}
+{\"query\":\"SELECT SI_SCHEDULE_STATUS FROM CI_INFOOBJECTS WHERE SI_ID={{V_SCHEDULEID}}\"}
 
 -   Output Handling tab
 
-    ![](media/image23.png)\
+    ![](media/image23.png)
     ![](media/image24.png)
 
 ## Step Document Schedule now
 
 Add the step with these 2 options
 
-![](media/image25.png){width="3.141087051618548in"
-height="3.4295527121609797in"}
+![](media/image25.png)
 
 -   REST API tab
 
@@ -201,12 +198,12 @@ height="3.4295527121609797in"}
 
 The body is:
 
-\<schedule\>
-	\<name\>{{A_INSTANCE}}\</name\>
+<schedule>
+	<name>{{A_INSTANCE}}</name>
 	{{D_FORMAT}}
 	{{D_DESTINATION}}
 	{{D_PARAMS}}
-\</schedule\>
+</schedule>
 
 -   Output Handling tab
 
