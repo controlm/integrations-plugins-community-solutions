@@ -56,17 +56,17 @@ supported by BMC.
 
 
 # SAP Business Object prerequisites
-
+|**Parameter**|**Value**|REST API endpoint|http(s)://server_name:6405/biprws|User| |Password| |Authentication| secEnterprise,secLDAP,secWinAD,secSAPR3|
   -----------------------------------------------------------------------
-|  **Parameter**        |     **Value**                                |
-  ----------------------|--- ------------------------------------------|---
-|  REST API endpoint    |     http(s)://server_name:6405/biprws        |
-|                       |                                              |
-|  User                 |                                              |
-|                       |                                              |
-|  Password             |                                              |
-|                       |                                              |
-|  Authentication       |     secEnterprise,secLDAP,secWinAD,secSAPR3  |
+  **Parameter**             **Value**
+  ------------------------- ---------------------------------------------
+  REST API endpoint         http(s)://server_name:6405/biprws
+
+  User                      
+
+  Password                  
+
+  Authentication            secEnterprise,secLDAP,secWinAD,secSAPR3
   -----------------------------------------------------------------------
 
 ## Application Integrator: create the plugin
