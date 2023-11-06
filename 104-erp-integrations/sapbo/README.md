@@ -81,40 +81,40 @@ supported by BMC.
 
 # Application Integrator: create the plugin
 
-![](vertopal_d928622f9963465cba9260d5cce71e42/media/image1.png){width="6.17in"
+![](media/image1.png)
 
 -   Enter your credentials in the login screen
 
-![](vertopal_d928622f9963465cba9260d5cce71e42/media/image2.png)
+![](media/image2.png)
 
 -   Click on \"Add Plug-in\"
 
-![](vertopal_d928622f9963465cba9260d5cce71e42/media/image3.png)
+![](media/image3.png)
 
 -   Name your job type and select REST API as the Steps Default
     Interface
 
-![](vertopal_d928622f9963465cba9260d5cce71e42/media/image4.png)
+![](media/image4.png)
 
 #  Add a Connection Profile Attribute in the "Attribute Management" tab 
 
-![](vertopal_d928622f9963465cba9260d5cce71e42/media/image5.png)
+![](media/image5.png)
 
 -   HostURL, UserName are Text Box
 
 -   Password is type Password
 
-    ![](vertopal_d928622f9963465cba9260d5cce71e42/media/image6.png)
+    ![](media/image6.png)
 
 -   AuthType is 'DropDown List' with Format
 
-    ![](vertopal_d928622f9963465cba9260d5cce71e42/media/image7.png)
+    ![](media/image7.png)
 
 # Create the Form
 
 -   Job Definition
 
-![](vertopal_d928622f9963465cba9260d5cce71e42/media/image8.png)
+![](media/image8.png)
 
 
 +-------------------+--------------------------------------------------+
@@ -146,14 +146,14 @@ supported by BMC.
 
 -   Form customization
 
-    ![](vertopal_d928622f9963465cba9260d5cce71e42/media/image11.png)
+    ![](media/image11.png)
 
 #  Step Pre-Execution : Get SAP Token
 
 -   REST API tab
 
-    ![](vertopal_d928622f9963465cba9260d5cce71e42/media/image12.png)\
-    ![](vertopal_d928622f9963465cba9260d5cce71e42/media/image13.png)
+    ![](media/image12.png)\
+    ![](media/image13.png)
 
 The body is:
 
@@ -161,15 +161,15 @@ The body is:
 
 -   Output Handling tab
 
-    ![](vertopal_d928622f9963465cba9260d5cce71e42/media/image14.png)
+    ![](media/image14.png)
 
 #  Step Get Report ID from CUID
 
 -   REST API tab
 
-![](vertopal_d928622f9963465cba9260d5cce71e42/media/image15.png)
+![](media/image15.png)
 
-![](vertopal_d928622f9963465cba9260d5cce71e42/media/image16.png)
+![](media/image16.png)
 
 Body is :
 
@@ -177,21 +177,21 @@ Body is :
 
 -   Output Handling tab
 
-    ![](vertopal_d928622f9963465cba9260d5cce71e42/media/image17.png)
+    ![](media/image17.png)
 
 #  Step PUB Schedule Now
 
 This step will run the Publication report.
 
-![](vertopal_d928622f9963465cba9260d5cce71e42/media/image18.png)
+![](media/image18.png)
 
 -   Conditions tab
 
-    ![](vertopal_d928622f9963465cba9260d5cce71e42/media/image19.png)
+    ![](media/image19.png)
 
 -   REST API tab
 
-    ![](vertopal_d928622f9963465cba9260d5cce71e42/media/image20.png)
+    ![](media/image20.png)
 
 URL is:
 
@@ -199,7 +199,7 @@ v1/publications/{{V_SI_ID}}/schedules/schedule/now
 
 -   Output Handling tab
 
-    ![](vertopal_d928622f9963465cba9260d5cce71e42/media/image21.png)
+    ![](media/image21.png)
 
 # Sub-step PUB Schedule Now : Verify operation completion
 
@@ -208,7 +208,7 @@ response.
 
 -   REST API tab
 
-![](vertopal_d928622f9963465cba9260d5cce71e42/media/image22.png)
+![](media/image22.png)
 
 The query is:
 
@@ -217,20 +217,20 @@ SI_ID={{V_SCHEDULEID}}\"}
 
 -   Output Handling tab
 
-    ![](vertopal_d928622f9963465cba9260d5cce71e42/media/image23.png)\
-    ![](vertopal_d928622f9963465cba9260d5cce71e42/media/image24.png)
+    ![](media/image23.png)\
+    ![](media/image24.png)
 
 # Step Document Schedule now
 
 Add the step with these 2 options
 
-![](vertopal_d928622f9963465cba9260d5cce71e42/media/image25.png){width="3.141087051618548in"
+![](media/image25.png){width="3.141087051618548in"
 height="3.4295527121609797in"}
 
 -   REST API tab
 
-    ![](vertopal_d928622f9963465cba9260d5cce71e42/media/image26.png)\
-    ![](vertopal_d928622f9963465cba9260d5cce71e42/media/image27.png)
+    ![](media/image26.png)\
+    ![](media/image27.png)
 
 The body is:
 
@@ -248,13 +248,13 @@ The body is:
 
 -   Output Handling tab
 
-    ![](vertopal_d928622f9963465cba9260d5cce71e42/media/image28.png)
+    ![](media/image28.png)
 
 # Sub-step Document Schedule: Manual abort operation
 
 -   REST API tab
 
-    ![](vertopal_d928622f9963465cba9260d5cce71e42/media/image29.png)
+    ![](media/image29.png)
 
 # Sub-step Document Schedule: Verify operation completion
 
@@ -264,41 +264,41 @@ REST API tab and Output Handling tab are the same as 8.
 
 -   REST API tab
 
-![](vertopal_d928622f9963465cba9260d5cce71e42/media/image30.png)
+![](media/image30.png)
 
 # Publish and Deploy your job type
 
 Select \"Publish & Deploy\"\
-![](vertopal_d928622f9963465cba9260d5cce71e42/media/image31.png)
+![](media/image31.png)
 
 If this window pop-ups, you can publish with Warnings
 
-![](vertopal_d928622f9963465cba9260d5cce71e42/media/image32.png)
+![](media/image32.png)
 
 Select an Agent an Apply.
 
 If none Agent is present, then deploy he Application Pack/Application
 Integrator plugin to an agent.
 
-![](vertopal_d928622f9963465cba9260d5cce71e42/media/image33.png)
+![](media/image33.png)
 
 #  Use your new job type in Control-M
 
 Log in to the Control-M web environment
 
-![](vertopal_d928622f9963465cba9260d5cce71e42/media/image34.png)
+![](media/image34.png)
 
 -   Create a new centralised connection profile for your job type:
 
-![](vertopal_d928622f9963465cba9260d5cce71e42/media/image35.png)
+![](media/image35.png)
 
 Click on Add Connection Profile
 
 Give your connection profile a name and populate the fields from your AI
 job in the
-blade![](vertopal_d928622f9963465cba9260d5cce71e42/media/image36.png)
+blade![](media/image36.png)
 
 -   Create a new job from your job type in the palette in the Planning
     Domain
 
-![](vertopal_d928622f9963465cba9260d5cce71e42/media/image37.png)
+![](media/image37.png)
