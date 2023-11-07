@@ -7,6 +7,7 @@ As of this publication, this is still being tested, but it is already functional
 | Date | Who | What |
 | - | - | - |
 | 2023-02-07 | Daniel Companeetz | Initial release |
+| 2023-05-10 | Daniel Companeetz | Updated the AI |
 
 
 ## Contributions
