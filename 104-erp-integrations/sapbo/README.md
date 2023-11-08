@@ -1,4 +1,4 @@
-<H1>Sample integration of Control—M with SAP Business Objects</H1>
+<H1>Sample configuration of Control-M Application Integrator for integrating with SAP Business Objects</H1>
 
 
 **Note:All trademarks are property of their respective owners**
